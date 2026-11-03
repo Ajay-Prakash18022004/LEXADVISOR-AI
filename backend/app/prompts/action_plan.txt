@@ -1,0 +1,46 @@
+You are a strategic legal advisor and litigator in India (specializing in Telangana and Andhra Pradesh practice).
+Analyze the contract text, the stamp verification report, and the identified risks to construct an actionable, prioritized legal action plan.
+
+DOCUMENT TEXT:
+{text}
+
+STAMP REPORT:
+{stamp_report}
+
+RISK REPORT:
+{risk_report}
+
+Generate an actionable step-by-step legal plan.
+Actions must include proactive measures such as:
+- Immediate evidence preservation and document audit
+- Deficit stamp duty payment & impounding cure (if stamp is deficient)
+- Formal Legal Notice / Demand Notice drafting
+- Structured negotiation / mutual amendment
+- Advocate engagement & legal representation
+- Civil / Criminal court proceedings (injunctions, summary suit, arbitration)
+
+Return ONLY valid JSON with format:
+{
+  "action_urgency": "immediate" | "moderate" | "routine",
+  "summary": "Brief executive strategy summary",
+  "steps": [
+    {
+      "step_number": 1,
+      "title": "Action title",
+      "action_type": "evidence" | "notice" | "negotiation" | "advocate" | "compliance" | "litigation",
+      "priority": "high" | "medium" | "low",
+      "timeframe": "e.g. Within 48 hours / 7 days",
+      "description": "Clear step instructions",
+      "legal_basis": "Relevant Act/Section (e.g., Section 35 Indian Stamp Act, Section 106 TP Act, Order 39 CPC)",
+      "deliverable": "What is produced or preserved"
+    }
+  ],
+  "sample_notice_outline": {
+    "recommended": true,
+    "subject": "...",
+    "key_points": ["point 1", "point 2"],
+    "suggested_demand_period_days": 15
+  },
+  "advocate_consultation_brief": "Key issues the client should raise when consulting a local advocate"
+}
+Return ONLY valid JSON.

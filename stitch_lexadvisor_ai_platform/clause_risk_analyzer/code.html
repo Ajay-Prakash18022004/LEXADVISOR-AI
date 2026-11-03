@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#3c475a","surface-tint":"#565e74","primary-fixed-dim":"#bec6e0","outline":"#76777d","secondary-fixed":"#d8e3fb","on-primary-fixed-variant":"#3f465c","on-tertiary-container":"#c76c00","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","secondary-fixed-dim":"#bcc7de","on-tertiary-fixed":"#2f1500","tertiary-fixed-dim":"#ffb77d","inverse-on-surface":"#eaf1ff","secondary-container":"#d5e0f8","surface-dim":"#cbdbf5","primary-fixed":"#dae2fd","inverse-surface":"#213145","primary":"#000000","error":"#ba1a1a","surface-container":"#e5eeff","background":"#f8f9ff","on-background":"#0b1c30","surface":"#f8f9ff","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","tertiary":"#000000","on-tertiary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-container":"#2f1500","surface-container-high":"#dce9ff","on-error":"#ffffff","on-surface-variant":"#45464d","on-secondary":"#ffffff","primary-container":"#131b2e","surface-bright":"#f8f9ff","on-secondary-container":"#586377","outline-variant":"#c6c6cd","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","on-secondary-fixed":"#111c2d","inverse-primary":"#bec6e0","on-tertiary":"#ffffff","secondary":"#545f73","on-surface":"#0b1c30"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"title-md":["Plus Jakarta Sans"],"metric-number":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"body-lg":["1.125rem",{lineHeight:"1.6",letterSpacing:"0em",fontWeight:"400"}],"body-md":["0.9375rem",{lineHeight:"1.55",letterSpacing:"0em",fontWeight:"400"}],"label-caps":["0.6875rem",{lineHeight:"1.2",letterSpacing:"0.06em",fontWeight:"600"}],"title-md":["1rem",{lineHeight:"1.4",letterSpacing:"-0.005em",fontWeight:"600"}],"metric-number":["1.75rem",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["1.75rem",{lineHeight:"1.25",letterSpacing:"-0.015em",fontWeight:"700"}],"display":["3rem",{lineHeight:"1.15",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1.3",letterSpacing:"0.01em",fontWeight:"500"}],"headline-md":["1.5rem",{lineHeight:"1.3",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.8125rem",{lineHeight:"1.5",letterSpacing:"0.005em",fontWeight:"400"}],"headline-sm":["1.25rem",{lineHeight:"1.35",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="LexAdvisor AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UA50Qpnx2FlDtqnWHOHKNKr1rFeZJVhFcjIFLVIP9Kokp2Es1JOXT5s3tZQlV7fFD4ln7fgmA5jvkIwFysMWVia5sZseUeQeRxxp7BOAHsjDBY1zPg8cUY-_fV1XdzeI0quNhtTWM2P2QmdNRpBtIb7OdPJDnuw_SJ9BtJT1heDFOcvBuGaSA2nGIuPY3MLdVriOG7TvXUCfd2NKSRdXbr4w6cMomGcxQiSTNmkAw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold tracking-tight leading-none">LexAdvisor AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1 tracking-wider">Intelligent Legal Assistance</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Overview</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-sm text-body-sm">Dashboard</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Document Intelligence</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="document-analysis" href="#"><span class="material-symbols-outlined text-lg">description</span><span class="font-body-sm text-body-sm">Document Analysis</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="stamp-duty-auditor" href="#"><span class="material-symbols-outlined text-lg">verified_user</span><span class="font-body-sm text-body-sm">Stamp Duty Auditor</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container" data-path="clause-risk-analyzer" href="#"><span class="material-symbols-outlined text-lg">policy</span><span class="font-body-sm text-body-sm">Clause Risk Analyzer</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="action-roadmap" href="#"><span class="material-symbols-outlined text-lg">alt_route</span><span class="font-body-sm text-body-sm">Action Roadmap</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Management</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rent-and-deadlines" href="#"><span class="material-symbols-outlined text-lg">event_available</span><span class="font-body-sm text-body-sm">Rent &amp; Deadlines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="advocate-directory" href="#"><span class="material-symbols-outlined text-lg">gavel</span><span class="font-body-sm text-body-sm">Advocate Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-consultations" href="#"><span class="material-symbols-outlined text-lg">forum</span><span class="font-body-sm text-body-sm">My Consultations</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">AI Assistance</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-legal-counsel" href="#"><span class="material-symbols-outlined text-lg">smart_toy</span><span class="font-body-sm text-body-sm">AI Legal Counsel</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/60 space-y-space-xs"><div class="space-y-1"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-lg">support</span><span class="font-body-sm text-body-sm">Help &amp; Support</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-sm text-body-sm">Settings</span></a></div><div class="pt-space-xs flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm"><div class="h-8 w-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-xs shrink-0">RV</div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Adv. Rajesh Varma</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">High Court / Citizen Portal</span></div></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-sm">home</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm">Statutory Intelligence</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Dashboard</span></div><div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface font-semibold">TS &amp; AP Jurisdiction</span></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="h-10 pl-9 pr-12 w-64 lg:w-72 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search statutes, petitions, acts..." type="text"/><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div><button class="h-10 px-space-md bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-on-background transition-colors flex items-center gap-1.5 shadow-sm" type="button"><span class="material-symbols-outlined text-lg">add</span><span>Analyze New Document</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD447UJPPEezZxzVigU31EBwZxWytn_JKxY7__Ztvq8fDvCw4iowqRHFQim_XnmaayUnQqRQxcqYUt_Dpc9WXFZerr106tfK8q9N1oAlCXmrY6gkxF1vM-j-sf_IL7f5R8yxIdWWZ9XLNlFLt0ozw347tHYdojhUTX7OaGh1t5JiaU13UT-qCKkTmbiPyV072d_vws14OkR-yhdw-Al4BtgJAy1DeHkPSgtPCrdbSQ"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="max-w-7xl mx-auto px-space-xl py-space-xl"><div class="flex flex-col w-full pb-24 space-y-space-xl">
+<!-- Header & Meta Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-fixed-variant font-label-caps text-label-caps uppercase tracking-wider font-semibold">Statutory Lease Audit</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Document ID: TS-HYD-2024-8842</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Contract Risk &amp; Clause Intelligence</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Understand what your agreement actually says. Statutorily calibrated counter-proposals for Hyderabad &amp; AP jurisdictions.</p>
+</div>
+<!-- Jurisdictional Trust Badge -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Model Rent Act 2021</p>
+<p class="font-title-md text-title-md font-semibold text-on-surface">94.2% Audit Reliability</p>
+</div>
+</div>
+</div>
+<!-- Filter Ribbon -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="filter-tab active px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" data-filter="all">
+<span>All Clauses</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest/20 font-label-caps text-label-caps">28</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-semibold shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" data-filter="high">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>High Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-label-caps text-label-caps text-on-surface">4</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-semibold shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" data-filter="medium">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span>Medium Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-label-caps text-label-caps text-on-surface">6</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-semibold shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" data-filter="missing">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Missing Protective</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-label-caps text-label-caps text-on-surface">5</span>
+</button>
+<button class="filter-tab px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-semibold shadow-sm transition-all whitespace-nowrap flex items-center gap-1.5" data-filter="safe">
+<span class="w-2 h-2 rounded-full bg-on-secondary-container"></span>
+<span>Standard/Safe</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container font-label-caps text-label-caps text-on-surface">13</span>
+</button>
+</div>
+<!-- Top Statistics Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider font-semibold">Total Clauses Analyzed</span>
+<span class="material-symbols-outlined text-secondary-fixed-variant text-xl">description</span>
+</div>
+<div class="mt-space-md">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">28</span>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span>100% Lexical Parsing Complete</span>
+</div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-error tracking-wider font-semibold">High-Risk Clauses</span>
+<div class="p-1 rounded bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-sm font-bold">priority_high</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-number text-metric-number text-error font-bold">4</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">Critical Attention</span>
+</div>
+<p class="mt-1 text-on-surface-variant font-label-sm text-label-sm">Potential deposit loss &amp; unconstitutional terms</p>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-wider font-semibold">Medium-Risk Clauses</span>
+<div class="p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-sm">warning</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">6</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps uppercase font-bold">Negotiate</span>
+</div>
+<p class="mt-1 text-on-surface-variant font-label-sm text-label-sm">Unilateral power imbalance &amp; notice ambiguities</p>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">Missing Safeguards</span>
+<div class="p-1 rounded bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-sm">shield_with_house</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-number text-metric-number text-on-surface font-bold">5</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase font-bold">Protection Gaps</span>
+</div>
+<p class="mt-1 text-on-surface-variant font-label-sm text-label-sm">Essential tenant safeguards omitted in deed</p>
+</div>
+</div>
+</div>
+<!-- Risk Distribution Overview Visual -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Clause Risk Architecture</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Weighted exposure index aggregated against TS Real Estate &amp; Tenancy Standards</p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps">
+<span class="w-2.5 h-2.5 rounded-sm bg-on-secondary-container"></span> Safe 46%
+        <span class="w-2.5 h-2.5 rounded-sm bg-on-tertiary-container ml-2"></span> Medium 21%
+        <span class="w-2.5 h-2.5 rounded-sm bg-error ml-2"></span> High 14%
+        <span class="w-2.5 h-2.5 rounded-sm bg-primary-container ml-2"></span> Missing 18%
+      </div>
+</div>
+<!-- Segmented Visual Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-low flex overflow-hidden p-0.5 shadow-inner">
+<div class="h-full bg-on-secondary-container rounded-l-full" style="width: 46%" title="Safe: 46% (13 Clauses)"></div>
+<div class="h-full bg-on-tertiary-container" style="width: 21%" title="Medium Risk: 21% (6 Clauses)"></div>
+<div class="h-full bg-error" style="width: 14%" title="High Risk: 14% (4 Clauses)"></div>
+<div class="h-full bg-primary-container rounded-r-full" style="width: 19%" title="Missing Safeguards: 18% (5 Clauses)"></div>
+</div>
+<!-- Inline Breakdown Metric Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-secondary-container text-base">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Standard / Safe</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">13</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-base">warning_amber</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Medium Risk</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">6</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-base">error</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">High / Critical</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-error">4</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">add_moderator</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Missing Safeguards</span>
+</div>
+<span class="font-title-md text-title-md font-bold text-on-surface">5</span>
+</div>
+</div>
+</div>
+<!-- Missing Protective Clauses Alert Banners (Grid) -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-xl">flip_camera_ios</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Missing Protective Safeguards</h2>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-caps text-label-caps uppercase font-bold">Urgent Inclusions Needed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended by Model Tenancy Act §14</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Safeguard 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-base">schedule</span>
+</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container uppercase font-bold">Gap #01</span>
+</div>
+<h3 class="font-title-md text-title-md font-semibold text-on-surface pt-1">Missing Grace Period</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No standard 7-day grace window before default interest and penalty clauses activate.</p>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add Suggested Clause</span>
+</button>
+</div>
+</div>
+<!-- Safeguard 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-base">currency_rupee</span>
+</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container uppercase font-bold">Gap #02</span>
+</div>
+<h3 class="font-title-md text-title-md font-semibold text-on-surface pt-1">Undefined Deposit Refund Timeline</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agreement fails to stipulate mandatory 7–15 days return window post keys handover.</p>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add Suggested Clause</span>
+</button>
+</div>
+</div>
+<!-- Safeguard 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-base">handyman</span>
+</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container uppercase font-bold">Gap #03</span>
+</div>
+<h3 class="font-title-md text-title-md font-semibold text-on-surface pt-1">Unclear Repair Responsibilities</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Structural vs minor repair liabilities are absent, exposing tenant to large maintenance costs.</p>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add Suggested Clause</span>
+</button>
+</div>
+</div>
+<!-- Safeguard 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="p-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-base">balance</span>
+</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container uppercase font-bold">Gap #04</span>
+</div>
+<h3 class="font-title-md text-title-md font-semibold text-on-surface pt-1">Unilateral Termination Loophole</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Landlord may eject with 7-day notice while tenant is bound unconditionally for 11 months.</p>
+</div>
+<div class="pt-space-md">
+<button class="w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add Suggested Clause</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Clause Comparison Workspace -->
+<div class="space-y-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Clause Comparison &amp; Counter-Draft Engine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dual-column statutory analysis with real-time legal redlining and statutory citations</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bulk Actions:</span>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-colors" id="select-all-btn">
+          Select All Risky
+        </button>
+</div>
+</div>
+<!-- CARD 1 (Critical Risk) -->
+<div class="clause-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" data-risk="high">
+<!-- Card Header Ribbon -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-error-container text-on-error-container font-label-caps text-label-caps font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">dangerous</span>
+            Critical Risk (9.4/10)
+          </span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Clause 8: Lock-in &amp; Deposit Forfeiture</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Section: Financial Terms &amp; Security</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface font-medium select-none">
+<input checked="" class="clause-toggle w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span>Include in Redline Pack</span>
+</label>
+</div>
+</div>
+<!-- 3-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 divide-y lg:divide-y-0">
+<!-- Col 1: Original Clause -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/30 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider font-semibold">1. Original Draft Language</span>
+<span class="material-symbols-outlined text-error text-base">format_quote</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“If tenant vacates premises prior to the expiry of 11 months, the entire security deposit of <strong class="text-error font-semibold">₹1,50,000 shall stand immediately forfeited</strong> without any claim or dispute.”</p>
+</div>
+</div>
+<div class="pt-space-sm">
+<span class="font-label-caps text-label-caps text-error bg-error-container/50 px-2 py-1 rounded inline-block">
+              Deemed Unfair Penalty • Indian Contract Act §74
+            </span>
+</div>
+</div>
+<!-- Col 2: Plain English Explanation -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-lowest space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-wider font-semibold">2. Plain English Translation</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-base">psychology</span>
+</div>
+<div class="p-space-md rounded-lg bg-tertiary-fixed/30 text-on-surface font-body-sm text-body-sm leading-relaxed">
+<p class="font-semibold text-on-surface mb-1">What does this mean for you?</p>
+<p class="text-on-surface-variant">If you have a sudden job transfer or personal emergency and need to leave after 6 months, the landlord will seize your entire <strong class="text-on-surface font-semibold">₹1,50,000 deposit</strong> even if you gave 2 months advance notice. Under Supreme Court precedents, pre-estimated liquidated damages without actual proof of loss are void.</p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container">info</span>
+<span>Financial Exposure Risk: ₹1,50,000</span>
+</div>
+</div>
+<!-- Col 3: Recommended Balanced Clause -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/40 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">3. Statutorily Balanced Counter-Clause</span>
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“Either party may terminate this agreement by providing <strong class="text-secondary font-semibold">two (2) months prior written notice</strong>. Upon vacating and handing over peaceful possession, the security deposit shall be refunded in full after deducting only pending utility bills and mutually documented pre-agreed painting charges.”</p>
+</div>
+</div>
+<!-- Card Action Buttons -->
+<div class="pt-space-sm flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-1">
+<button class="copy-btn px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-copy="Either party may terminate this agreement by providing two (2) months prior written notice. Upon vacating and handing over peaceful possession, the security deposit shall be refunded in full after deducting only pending utility bills and mutually documented pre-agreed painting charges.">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+<span>Edit</span>
+</button>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Ready for Counter-Draft</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2 (Medium Risk) -->
+<div class="clause-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" data-risk="medium">
+<!-- Card Header Ribbon -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">warning</span>
+            Medium Risk (6.8/10)
+          </span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Clause 12: Inspection &amp; Landlord Entry Rights</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Section: Possession &amp; Privacy</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface font-medium select-none">
+<input checked="" class="clause-toggle w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span>Include in Redline Pack</span>
+</label>
+</div>
+</div>
+<!-- 3-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 divide-y lg:divide-y-0">
+<!-- Col 1: Original -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/30 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider font-semibold">1. Original Draft Language</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-base">format_quote</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“Lessor or his representatives reserve the right to <strong class="text-on-tertiary-container font-semibold">enter and inspect the premises at any time without notice</strong>.”</p>
+</div>
+</div>
+<div class="pt-space-sm">
+<span class="font-label-caps text-label-caps text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-1 rounded inline-block">
+              Violates Peaceful Possession • T.P. Act §108(m)
+            </span>
+</div>
+</div>
+<!-- Col 2: Plain English -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-lowest space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-wider font-semibold">2. Plain English Translation</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-base">psychology</span>
+</div>
+<div class="p-space-md rounded-lg bg-tertiary-fixed/30 text-on-surface font-body-sm text-body-sm leading-relaxed">
+<p class="font-semibold text-on-surface mb-1">Privacy Infringement Risk</p>
+<p class="text-on-surface-variant">The landlord, property managers, or real estate brokers can enter your private home unannounced whenever they want without asking you first, compromising your constitutional privacy and quiet enjoyment.</p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container">privacy_tip</span>
+<span>Statutory Covenant Breach</span>
+</div>
+</div>
+<!-- Col 3: Recommended -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/40 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">3. Statutorily Balanced Counter-Clause</span>
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“The Lessor or authorized representatives may inspect the premises during <strong class="text-secondary font-semibold">reasonable daylight hours (10:00 AM – 6:00 PM)</strong> after providing at least <strong class="text-secondary font-semibold">twenty-four (24) hours prior written notice</strong> via SMS or email to the Lessee.”</p>
+</div>
+</div>
+<!-- Card Action Buttons -->
+<div class="pt-space-sm flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-1">
+<button class="copy-btn px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-copy="The Lessor or authorized representatives may inspect the premises during reasonable daylight hours (10:00 AM – 6:00 PM) after providing at least twenty-four (24) hours prior written notice via SMS or email to the Lessee.">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+<span>Edit</span>
+</button>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Ready for Counter-Draft</span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 3 (High Risk) -->
+<div class="clause-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" data-risk="high">
+<!-- Card Header Ribbon -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded-md bg-error-container text-on-error-container font-label-caps text-label-caps font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">gavel</span>
+            High Risk (8.6/10)
+          </span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Clause 15: Dispute Jurisdiction &amp; Usurious Interest</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Section: Default Remedies &amp; Forum</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-on-surface font-medium select-none">
+<input checked="" class="clause-toggle w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox"/>
+<span>Include in Redline Pack</span>
+</label>
+</div>
+</div>
+<!-- 3-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 divide-y lg:divide-y-0">
+<!-- Col 1: Original -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/30 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider font-semibold">1. Original Draft Language</span>
+<span class="material-symbols-outlined text-error text-base">format_quote</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“Late rent shall attract <strong class="text-error font-semibold">18% per month compound interest</strong> and disputes shall be subject only to exclusive arbitration chosen solely by the Lessor.”</p>
+</div>
+</div>
+<div class="pt-space-sm">
+<span class="font-label-caps text-label-caps text-error bg-error-container/50 px-2 py-1 rounded inline-block">
+              Usurious Rate • Unilateral Arbitrator Void (Perkins Eastman)
+            </span>
+</div>
+</div>
+<!-- Col 2: Plain English -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-lowest space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-wider font-semibold">2. Plain English Translation</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-base">psychology</span>
+</div>
+<div class="p-space-md rounded-lg bg-tertiary-fixed/30 text-on-surface font-body-sm text-body-sm leading-relaxed">
+<p class="font-semibold text-on-surface mb-1">Extortionate Penalty &amp; Biased Forum</p>
+<p class="text-on-surface-variant">Late rent compounds exponentially (over 200% per annum!), and you lose the right to an independent arbitrator. The Supreme Court strictly invalidates agreements where one party exclusively appoints the sole arbitrator.</p>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-error">dangerous</span>
+<span>Perkins Eastman Architects v. HSCC Violation</span>
+</div>
+</div>
+<!-- Col 3: Recommended -->
+<div class="lg:col-span-4 p-space-lg bg-surface-container-low/40 space-y-space-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">3. Statutorily Balanced Counter-Clause</span>
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm leading-relaxed shadow-sm">
+<p>“A standard <strong class="text-secondary font-semibold">flat late fee of ₹500</strong> shall apply after a <strong class="text-secondary font-semibold">7-day grace period</strong>. Any unresolved disputes shall be adjudicated by a <strong class="text-secondary font-semibold">mutually appointed sole arbitrator</strong> under the Indian Arbitration &amp; Conciliation Act in Hyderabad.”</p>
+</div>
+</div>
+<!-- Card Action Buttons -->
+<div class="pt-space-sm flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-1">
+<button class="copy-btn px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" data-copy="A standard flat late fee of ₹500 shall apply after a 7-day grace period. Any unresolved disputes shall be adjudicated by a mutually appointed sole arbitrator under the Indian Arbitration &amp; Conciliation Act in Hyderabad.">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+<span>Edit</span>
+</button>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-semibold">Ready for Counter-Draft</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Action Bar -->
+<aside aria-label="Negotiation Pack Actions" class="fixed bottom-0 left-72 right-0 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_20px_rgba(0,0,0,0.06)] z-40 px-space-xl py-space-sm">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span id="selected-count">3</span>
+</div>
+<div>
+<p class="font-title-md text-title-md font-bold text-on-surface">Negotiation Pack Summary</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant"><span id="selected-label">3 clauses</span> selected for tenant protective counter-proposal</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none h-11 px-space-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm" id="export-btn">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Export Redline (Word/PDF)</span>
+</button>
+<button class="flex-1 sm:flex-none h-11 px-space-lg bg-primary-container text-on-primary hover:bg-on-background font-body-sm text-body-sm font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm" id="share-btn">
+<span class="material-symbols-outlined text-lg">send</span>
+<span>Share with Landlord / Advocate</span>
+</button>
+</div>
+</div>
+</aside>
+</div>
+<script>
+  // Filter tabs behavior
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const clauseCards = document.querySelectorAll('.clause-card');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('bg-primary-container', 'text-on-primary');
+        t.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      tab.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      tab.classList.add('bg-primary-container', 'text-on-primary');
+
+      const filter = tab.getAttribute('data-filter');
+      clauseCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-risk') === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Clause Toggle counter
+  const toggles = document.querySelectorAll('.clause-toggle');
+  const countDisplay = document.getElementById('selected-count');
+  const labelDisplay = document.getElementById('selected-label');
+
+  function updateCount() {
+    const checkedCount = document.querySelectorAll('.clause-toggle:checked').length;
+    countDisplay.textContent = checkedCount;
+    labelDisplay.textContent = `${checkedCount} clause${checkedCount === 1 ? '' : 's'}`;
+  }
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('change', updateCount);
+  });
+
+  // Select all handler
+  const selectAllBtn = document.getElementById('select-all-btn');
+  let allSelected = true;
+  selectAllBtn.addEventListener('click', () => {
+    allSelected = !allSelected;
+    toggles.forEach(t => t.checked = allSelected);
+    selectAllBtn.textContent = allSelected ? 'Deselect All' : 'Select All Risky';
+    updateCount();
+  });
+
+  // Copy buttons
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const textToCopy = btn.getAttribute('data-copy');
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-sm">done</span><span>Copied!</span>`;
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+        }, 1800);
+      });
+    });
+  });
+
+  // Export feedback
+  document.getElementById('export-btn').addEventListener('click', () => {
+    alert('Generating High-Court compliant comparison redline document in DOCX & PDF...');
+  });
+
+  document.getElementById('share-btn').addEventListener('click', () => {
+    alert('Opening Advocate collaboration dispatch tray...');
+  });
+</script></div></main></div></body></html>

@@ -1,0 +1,61 @@
+{
+  "health": {
+    "status": 200,
+    "data": {
+      "status": "healthy",
+      "app": "LexAdvisor AI - Indian Legal Decision Support System",
+      "version": "2.0.0",
+      "jurisdictions": [
+        "Telangana (TS)",
+        "Andhra Pradesh (AP)"
+      ]
+    }
+  },
+  "advocates_nearby": {
+    "status": 200,
+    "count": 3
+  },
+  "book_appointment": {
+    "status": 200,
+    "notification_sent": false,
+    "notification_message": "Consultation saved in database. Notification queued for sureshtakur194@gmail.com. (Set SMTP_USER & SMTP_PASSWORD in .env for live SMTP delivery).",
+    "appointment_id": 11
+  },
+  "generate_draft": {
+    "status": 200,
+    "draft_id": 8,
+    "title": "Rental Agreement - Suresh Thakur & K. R. V. Rao",
+    "pdf_download_url": "/api/v1/pdf/8/download"
+  },
+  "download_draft_pdf": {
+    "status": 200,
+    "content_type": "application/pdf",
+    "size_bytes": 3979,
+    "is_pdf": true
+  },
+  "download_draft_docx": {
+    "status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size_bytes": 37344,
+    "is_docx": true
+  },
+  "action_plan_pdf": {
+    "status": 200,
+    "content_type": "application/pdf",
+    "size_bytes": 2767,
+    "is_pdf": true
+  },
+  "profile_update": {
+    "status": 200,
+    "user": {
+      "id": 2,
+      "name": "Suresh Thakur",
+      "email": "sureshtakur194@gmail.com",
+      "phone": "+91 98490 11223",
+      "role": "client",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "preferred_language": "English"
+    }
+  }
+}

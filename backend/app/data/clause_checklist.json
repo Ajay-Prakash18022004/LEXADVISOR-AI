@@ -1,0 +1,129 @@
+{
+  "rental_agreement": {
+    "name": "Residential / Commercial Rental Agreement",
+    "required_clauses": [
+      {
+        "id": "parties",
+        "name": "Parties & Identity Clause",
+        "criticality": "high",
+        "description": "Names, Aadhaar/PAN, addresses, and identities of Lessor and Lessee",
+        "why_needed_in_plain_words": "You must clearly know who the legal owner is so an unauthorized third party doesn't take your deposit money."
+      },
+      {
+        "id": "premises",
+        "name": "Description of Demised Premises",
+        "criticality": "high",
+        "description": "Complete address, unit number, boundaries, parking slot, and fixtures included",
+        "why_needed_in_plain_words": "Protects you from landlord disputing parking rights or claiming furniture was missing or damaged."
+      },
+      {
+        "id": "term_and_rent",
+        "name": "Lease Term, Due Date & Rent Escalation Cap",
+        "criticality": "high",
+        "description": "Exact lease tenure (e.g., 11 months), monthly rent amount, monthly due date (e.g. 5th), grace period, and annual rent hike ceiling (max 5-10%)",
+        "why_needed_in_plain_words": "Prevents the landlord from arbitrarily increasing rent mid-stay or charging surprise late penalties without a grace period."
+      },
+      {
+        "id": "security_deposit",
+        "name": "Interest-Free Security Deposit & Refund Timeline",
+        "criticality": "high",
+        "description": "Refundable security deposit amount, explicit 7-14 days refund timeline, and clause requiring itemized repair bills for any deductions",
+        "why_needed_in_plain_words": "Stops landlords from illegally withholding your deposit or deducting imaginary painting/damage charges without receipts."
+      },
+      {
+        "id": "maintenance_and_utilities",
+        "name": "Utilities & Maintenance Charges Allocation",
+        "criticality": "medium",
+        "description": "Electricity, water, society maintenance allocation and structural repair responsibility of landlord",
+        "why_needed_in_plain_words": "Ensures structural building repairs (seepage, plumbing leaks) are paid by the owner, not the tenant."
+      },
+      {
+        "id": "termination_and_notice",
+        "name": "Termination & Notice Period (Min 30 Days)",
+        "criticality": "high",
+        "description": "Mutual notice period (at least 30 days) for vacating or terminating, prohibiting sudden immediate eviction",
+        "why_needed_in_plain_words": "Guarantees you cannot be thrown out onto the street without at least 30 days prior written notice."
+      },
+      {
+        "id": "entry_inspection_notice",
+        "name": "Landlord Inspection Notice (24-Hour Notice Rule)",
+        "criticality": "medium",
+        "description": "Landlord right of entry strictly subject to 24 hours prior notice and reasonable daytime hours",
+        "why_needed_in_plain_words": "Protects your family's personal privacy so the landlord cannot enter your home unannounced."
+      },
+      {
+        "id": "registration_clause",
+        "name": "Mandatory Registration Compliance (If Tenure > 11 Months)",
+        "criticality": "high",
+        "description": "Mandatory Sub-Registrar registration under Section 17 of Indian Registration Act if tenure is 12 months or longer",
+        "why_needed_in_plain_words": "Any lease for 1 year or more MUST be registered at the Sub-Registrar office, otherwise it is void and cannot be used in court."
+      },
+      {
+        "id": "dispute_resolution",
+        "name": "Dispute Resolution & Local Jurisdiction",
+        "criticality": "medium",
+        "description": "Courts having exclusive jurisdiction located in the local district / state where the property is situated",
+        "why_needed_in_plain_words": "Ensures any legal dispute is fought in your local city civil court, not in a far-off distant state."
+      },
+      {
+        "id": "governing_law",
+        "name": "Governing Law & State Tenancy Protection",
+        "criticality": "low",
+        "description": "Subject to laws of India and applicable State Tenancy Acts",
+        "why_needed_in_plain_words": "Ensures statutory tenant protections under Indian tenancy laws apply to your contract."
+      }
+    ]
+  },
+  "service_agreement": {
+    "name": "Professional Services Agreement",
+    "required_clauses": [
+      {"id": "scope_of_work", "name": "Scope of Work & Deliverables", "criticality": "high", "description": "Precise specifications, milestones, and acceptance criteria", "why_needed_in_plain_words": "Prevents client scope creep where you do extra unpaid work."},
+      {"id": "payment_terms", "name": "Payment Terms & Invoicing", "criticality": "high", "description": "Milestone payments, invoice cycle, taxes (GST), and late payment interest", "why_needed_in_plain_words": "Guarantees you get paid on time with interest for late client payments."},
+      {"id": "confidentiality", "name": "Confidentiality & Non-Disclosure", "criticality": "high", "description": "Protection of proprietary trade secrets, data, and technical know-how", "why_needed_in_plain_words": "Keeps your company's business secrets and methods confidential."},
+      {"id": "intellectual_property", "name": "Intellectual Property Ownership", "criticality": "high", "description": "Work-for-hire assignment or licensing terms", "why_needed_in_plain_words": "Defines who owns the code, design, or deliverable created."},
+      {"id": "limitation_of_liability", "name": "Limitation of Liability (Damages Cap)", "criticality": "high", "description": "Cap on aggregate damages and exclusion of consequential losses", "why_needed_in_plain_words": "Caps your legal financial risk to the total fees earned so you don't face bankruptcy."},
+      {"id": "indemnification", "name": "Mutual Indemnification", "criticality": "high", "description": "Third-party IP infringement and negligence indemnity limits", "why_needed_in_plain_words": "Ensures both sides protect each other mutually instead of only you paying for everything."},
+      {"id": "termination_clause", "name": "Termination for Cause & Convenience", "criticality": "high", "description": "Cure period for breach and rights upon immediate termination", "why_needed_in_plain_words": "Gives you at least 15-30 days to fix any innocent mistake before contract is cancelled."},
+      {"id": "dispute_resolution", "name": "Arbitration & Dispute Resolution", "criticality": "medium", "description": "Arbitration clause under Arbitration & Conciliation Act 1996", "why_needed_in_plain_words": "Allows resolving disputes quickly through an arbitrator instead of 10 years in court."},
+      {"id": "governing_law", "name": "Governing Law & Jurisdiction", "criticality": "medium", "description": "Applicable laws and seat of arbitration", "why_needed_in_plain_words": "Sets the legal rules and local city court for disputes."}
+    ]
+  },
+  "employment_agreement": {
+    "name": "Employment Agreement",
+    "required_clauses": [
+      {"id": "job_role", "name": "Designation, Duties & Reporting", "criticality": "high", "description": "Job title, principal duties, reporting authority", "why_needed_in_plain_words": "Ensures employer cannot arbitrarily change your core job duties to something unrelated."},
+      {"id": "remuneration", "name": "Salary, CTC & Benefits Breakdown", "criticality": "high", "description": "Breakdown of basic salary, allowances, statutory PF/ESI, deductions", "why_needed_in_plain_words": "Protects your take-home pay and ensures provident fund and medical benefits are deposited."},
+      {"id": "probation", "name": "Probation Period & Confirmation Terms", "criticality": "medium", "description": "Evaluation duration and terms of confirmation", "why_needed_in_plain_words": "Clearly sets the trial period so company cannot keep you on probation forever."},
+      {"id": "confidentiality", "name": "Confidential Information & Trade Secrets", "criticality": "high", "description": "Non-disclosure obligations during and post employment", "why_needed_in_plain_words": "Sets guidelines on handling confidential client and company data."},
+      {"id": "ip_assignment", "name": "Assignment of Inventions & IP", "criticality": "high", "description": "Employer ownership of employee creations during duty", "why_needed_in_plain_words": "Clarifies that work created during employment belongs to the employer."},
+      {"id": "non_solicitation", "name": "Reasonable Non-Solicitation", "criticality": "medium", "description": "Reasonable restriction on poaching staff or clients", "why_needed_in_plain_words": "Under Indian Contract Act Section 27, post-employment non-competes are void; only reasonable non-solicitation is valid."},
+      {"id": "termination_notice", "name": "Notice Period & Severance (Min 30 Days)", "criticality": "high", "description": "Notice period or pay in lieu, summary dismissal conditions", "why_needed_in_plain_words": "Ensures you are given 30 days notice or salary if laid off."},
+      {"id": "dispute_resolution", "name": "Dispute Resolution & Jurisdiction", "criticality": "low", "description": "Local jurisdiction for employment disputes", "why_needed_in_plain_words": "Ensures labor disputes are handled in your local city labor court."}
+    ]
+  },
+  "nda_non_disclosure": {
+    "name": "Non-Disclosure Agreement (NDA)",
+    "required_clauses": [
+      {"id": "definition_confidential", "name": "Definition of Confidential Information", "criticality": "high", "description": "Clear enumeration of proprietary information covered", "why_needed_in_plain_words": "Clearly defines what information must be kept secret."},
+      {"id": "obligations", "name": "Standard of Care & Non-Disclosure Obligations", "criticality": "high", "description": "Duty to safeguard, need-to-know restriction", "why_needed_in_plain_words": "Specifies how confidential documents must be guarded."},
+      {"id": "exceptions", "name": "Standard Exclusions from Confidentiality", "criticality": "high", "description": "Public domain, prior knowledge, independent development exceptions", "why_needed_in_plain_words": "Ensures you are not punished for information that was already public or known."},
+      {"id": "term", "name": "Duration of Confidentiality (Capped Term)", "criticality": "high", "description": "Term of agreement and survival period (e.g., 2-3 years)", "why_needed_in_plain_words": "Ensures confidentiality doesn't bind you endlessly forever."},
+      {"id": "return_destruction", "name": "Return or Destruction of Materials", "criticality": "medium", "description": "Written certification of deletion upon termination", "why_needed_in_plain_words": "Clear process to delete data when the partnership ends."},
+      {"id": "injunctive_relief", "name": "Injunctive Relief & Remedies", "criticality": "medium", "description": "Right to seek injunctions without proof of special damages", "why_needed_in_plain_words": "Allows stopping unauthorized leaks immediately via court order."},
+      {"id": "governing_law", "name": "Governing Law & Courts", "criticality": "medium", "description": "Choice of law and court jurisdiction", "why_needed_in_plain_words": "Specifies applicable state laws."}
+    ]
+  },
+  "general_agreement": {
+    "name": "General Commercial Agreement / MoU",
+    "required_clauses": [
+      {"id": "recitals_parties", "name": "Preamble & Identity of Parties", "criticality": "high", "description": "Valid corporate/individual legal entities", "why_needed_in_plain_words": "Confirms the exact legal names and authorized signers."},
+      {"id": "consideration", "name": "Consideration & Performance Obligations", "criticality": "high", "description": "Clear reciprocal promises and consideration", "why_needed_in_plain_words": "Under Section 10/25 of Indian Contract Act, every valid contract must have clear consideration."},
+      {"id": "representations", "name": "Representations & Warranties", "criticality": "high", "description": "Authority to enter contract and legal capacity", "why_needed_in_plain_words": "Guarantees both sides have the legal right and power to sign."},
+      {"id": "limitation_liability", "name": "Limitation of Liability Cap", "criticality": "high", "description": "Damages cap and mutual liability parameters", "why_needed_in_plain_words": "Puts a safe ceiling on maximum damages you could ever owe."},
+      {"id": "termination", "name": "Term and Termination with Cure Period", "criticality": "high", "description": "Expiration, termination with/without breach", "why_needed_in_plain_words": "Ensures fair exit rights with reasonable notice."},
+      {"id": "force_majeure", "name": "Force Majeure (Acts of God & Epidemics)", "criticality": "medium", "description": "Unforeseeable events beyond reasonable control", "why_needed_in_plain_words": "Protects you from penalties if floods, earthquakes, or government lockdowns stop performance."},
+      {"id": "dispute_resolution", "name": "Dispute Resolution Mechanism", "criticality": "high", "description": "Conciliation, mediation or arbitration before court", "why_needed_in_plain_words": "Specifies mediation or arbitration before costly court trials."},
+      {"id": "jurisdiction", "name": "Governing Law & Jurisdiction", "criticality": "high", "description": "Applicable state laws and competent court seat", "why_needed_in_plain_words": "Ensures cases are heard in your home state courts."}
+    ]
+  }
+}

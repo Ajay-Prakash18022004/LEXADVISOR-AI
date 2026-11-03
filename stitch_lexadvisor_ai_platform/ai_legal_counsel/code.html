@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#3c475a","surface-tint":"#565e74","primary-fixed-dim":"#bec6e0","outline":"#76777d","secondary-fixed":"#d8e3fb","on-primary-fixed-variant":"#3f465c","on-tertiary-container":"#c76c00","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","secondary-fixed-dim":"#bcc7de","on-tertiary-fixed":"#2f1500","tertiary-fixed-dim":"#ffb77d","inverse-on-surface":"#eaf1ff","secondary-container":"#d5e0f8","surface-dim":"#cbdbf5","primary-fixed":"#dae2fd","inverse-surface":"#213145","primary":"#000000","error":"#ba1a1a","surface-container":"#e5eeff","background":"#f8f9ff","on-background":"#0b1c30","surface":"#f8f9ff","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","tertiary":"#000000","on-tertiary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-container":"#2f1500","surface-container-high":"#dce9ff","on-error":"#ffffff","on-surface-variant":"#45464d","on-secondary":"#ffffff","primary-container":"#131b2e","surface-bright":"#f8f9ff","on-secondary-container":"#586377","outline-variant":"#c6c6cd","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","on-secondary-fixed":"#111c2d","inverse-primary":"#bec6e0","on-tertiary":"#ffffff","secondary":"#545f73","on-surface":"#0b1c30"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"title-md":["Plus Jakarta Sans"],"metric-number":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"body-lg":["1.125rem",{lineHeight:"1.6",letterSpacing:"0em",fontWeight:"400"}],"body-md":["0.9375rem",{lineHeight:"1.55",letterSpacing:"0em",fontWeight:"400"}],"label-caps":["0.6875rem",{lineHeight:"1.2",letterSpacing:"0.06em",fontWeight:"600"}],"title-md":["1rem",{lineHeight:"1.4",letterSpacing:"-0.005em",fontWeight:"600"}],"metric-number":["1.75rem",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["1.75rem",{lineHeight:"1.25",letterSpacing:"-0.015em",fontWeight:"700"}],"display":["3rem",{lineHeight:"1.15",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1.3",letterSpacing:"0.01em",fontWeight:"500"}],"headline-md":["1.5rem",{lineHeight:"1.3",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.8125rem",{lineHeight:"1.5",letterSpacing:"0.005em",fontWeight:"400"}],"headline-sm":["1.25rem",{lineHeight:"1.35",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="LexAdvisor AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UA50Qpnx2FlDtqnWHOHKNKr1rFeZJVhFcjIFLVIP9Kokp2Es1JOXT5s3tZQlV7fFD4ln7fgmA5jvkIwFysMWVia5sZseUeQeRxxp7BOAHsjDBY1zPg8cUY-_fV1XdzeI0quNhtTWM2P2QmdNRpBtIb7OdPJDnuw_SJ9BtJT1heDFOcvBuGaSA2nGIuPY3MLdVriOG7TvXUCfd2NKSRdXbr4w6cMomGcxQiSTNmkAw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold tracking-tight leading-none">LexAdvisor AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1 tracking-wider">Intelligent Legal Assistance</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Overview</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="font-body-sm text-body-sm">Dashboard</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Document Intelligence</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="document-analysis" href="#"><span class="font-body-sm text-body-sm">Document Analysis</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="stamp-duty-auditor" href="#"><span class="font-body-sm text-body-sm">Stamp Duty Auditor</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="clause-risk-analyzer" href="#"><span class="font-body-sm text-body-sm">Clause Risk Analyzer</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="action-roadmap" href="#"><span class="font-body-sm text-body-sm">Action Roadmap</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Management</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rent-deadlines" href="#"><span class="font-body-sm text-body-sm">Rent &amp; Deadlines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="advocate-directory" href="#"><span class="font-body-sm text-body-sm">Advocate Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="consultations" href="#"><span class="font-body-sm text-body-sm">My Consultations</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">AI Assistance</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-counsel" href="#"><span class="font-body-sm text-body-sm">AI Legal Counsel</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/60 space-y-space-xs"><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="font-body-sm text-body-sm">Help &amp; Support</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="font-body-sm text-body-sm">Settings</span></a></nav><div class="pt-space-xs flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm"><div class="h-8 w-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-xs shrink-0">RV</div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Adv. Rajesh Varma</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">High Court / Citizen Portal</span></div></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-sm">home</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm">Statutory Intelligence</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Dashboard</span></div><div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface font-semibold">TS &amp; AP Jurisdiction</span></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="h-10 pl-9 pr-12 w-64 lg:w-72 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search statutes, petitions, acts..." type="text"/><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div><button class="h-10 px-space-md bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-on-background transition-colors flex items-center gap-1.5 shadow-sm" type="button"><span class="material-symbols-outlined text-lg">add</span><span>Analyze New Document</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD447UJPPEezZxzVigU31EBwZxWytn_JKxY7__Ztvq8fDvCw4iowqRHFQim_XnmaayUnQqRQxcqYUt_Dpc9WXFZerr106tfK8q9N1oAlCXmrY6gkxF1vM-j-sf_IL7f5R8yxIdWWZ9XLNlFLt0ozw347tHYdojhUTX7OaGh1t5JiaU13UT-qCKkTmbiPyV072d_vws14OkR-yhdw-Al4BtgJAy1DeHkPSgtPCrdbSQ"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin py-space-lg flex flex-col gap-space-lg max-w-[1600px] mx-auto w-full">
+<!-- Top Command & Status Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>AI Assistance</span>
+<span class="text-outline-variant">/</span>
+<span class="font-semibold text-on-surface">AI Legal Counsel</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-0.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">LexAdvisor AI Legal Counsel</h1>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 bg-surface-container-low rounded-full">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
+</span>
+<span class="font-label-caps text-label-caps text-on-surface font-semibold tracking-wider">
+              Active Engine: Lex-Tenancy v4.2 • TS &amp; AP Jurisdictions Indexed
+            </span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+          Intelligent statutory guidance, clause redlining advice, and tenancy law interpretation grounded in Telangana &amp; Andhra Pradesh jurisprudence.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-start xl:self-center">
+<button class="h-10 px-space-md bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold rounded-lg hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" onclick="alert('Exporting verified legal consultation transcript as a signed PDF...')" type="button">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Export Counsel Transcript</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm font-semibold rounded-lg hover:bg-surface-container hover:text-error transition-colors flex items-center gap-1.5" onclick="if(confirm('Clear current workspace session? Cached citations will be archived.')) location.reload();" type="button">
+<span class="material-symbols-outlined text-base">restart_alt</span>
+<span>Clear Conversation</span>
+</button>
+</div>
+</div>
+<!-- 2-Column Intelligent Workspace -->
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- Left Column (3.5 cols -> 4 of 12 cols on desktop) -->
+<aside class="col-span-12 lg:col-span-4 flex flex-col gap-space-md">
+<!-- Action & Active Document Anchor -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<button class="w-full h-11 bg-primary text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>New Consultation</span>
+</button>
+<!-- Current Case Document Attachment Context -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active Document Reference</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-caps text-label-caps font-semibold">Flagged</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-sm">description</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Syed_Residential_Lease_Kondapur.pdf</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Deficient Stamp • 4 Flagged Clauses</p>
+</div>
+</div>
+</div>
+<!-- History Filter Input -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" id="consultationSearch" placeholder="Search past consultations, rulings..." type="text"/>
+</div>
+</div>
+<!-- Consultation History Ledger -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Consultation History</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold">6 Sessions</span>
+</div>
+<!-- Category: Today -->
+<div class="space-y-1.5">
+<span class="px-space-xs font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase font-semibold">Today</span>
+<!-- Selected Active Conversation -->
+<a class="group relative flex items-start gap-2.5 p-space-sm bg-surface-container-low rounded-lg transition-all shadow-sm" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-on-tertiary-container shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate group-hover:text-primary">Lock-in Period Forfeiture Validity</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs">gavel</span> Section 74 Indian Contract Act
+                </span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">11:42 AM</span>
+</a>
+<a class="group flex items-start gap-2.5 p-space-sm rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-transparent shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">₹100 Stamp Duty regularisation steps</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs">account_balance</span> Section 35 Indian Stamp Act
+                </span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">09:15 AM</span>
+</a>
+</div>
+<!-- Category: Yesterday -->
+<div class="space-y-1.5 pt-space-xs">
+<span class="px-space-xs font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase font-semibold">Yesterday</span>
+<a class="group flex items-start gap-2.5 p-space-sm rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-transparent shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Security Deposit return time limit TS</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs">schedule</span> Model Tenancy Provision §13
+                </span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">Yesterday</span>
+</a>
+<a class="group flex items-start gap-2.5 p-space-sm rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-transparent shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Can landlord enter without 24hr notice?</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-xs">privacy_tip</span> Quiet Enjoyment Covenant
+                </span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">Yesterday</span>
+</a>
+</div>
+<!-- Category: Previous Week -->
+<div class="space-y-1.5 pt-space-xs">
+<span class="px-space-xs font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase font-semibold">Previous Week</span>
+<a class="group flex items-start gap-2.5 p-space-sm rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-transparent shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">GHMC Local Body Surcharge on 11m Lease</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant truncate mt-0.5">Municipal Corporation Act 1955</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">May 14</span>
+</a>
+<a class="group flex items-start gap-2.5 p-space-sm rounded-lg hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-all" href="#">
+<div class="w-1.5 self-stretch rounded-full bg-transparent shrink-0 mt-0.5"></div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Drafting rejoinder notice for repairs</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant truncate mt-0.5">Structural Obligation §108(f)</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5 shrink-0">May 11</span>
+</a>
+</div>
+</div>
+<!-- Grounded Jurisdiction Bottom Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container text-on-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-lg">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-semibold uppercase tracking-wider">Statutory Intelligence Foundation</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium mt-0.5">
+              Telangana Tenancy Framework • T.P. Act §§ 106-108 • Indian Contract Act § 74
+            </p>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">
+              Cross-referenced with High Court for the State of Telangana case precedents (2014-2024).
+            </p>
+</div>
+</div>
+</aside>
+<!-- Right Column (8.5 cols -> 8 of 12 cols on desktop) -->
+<section class="col-span-12 lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Quick Inquiry Suggested Prompts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container">tips_and_updates</span>
+              Recommended Inquiries based on Current Lease Document
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Tap to ask</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" onclick="document.getElementById('counselInput').value = this.innerText.trim();" type="button">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">arrow_forward</span>
+<span>Can the landlord forfeit the entire ₹1.5L deposit under Clause 8?</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" onclick="document.getElementById('counselInput').value = this.innerText.trim();" type="button">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">arrow_forward</span>
+<span>What is the penalty if my ₹100 stamp paper is impounded?</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" onclick="document.getElementById('counselInput').value = this.innerText.trim();" type="button">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">arrow_forward</span>
+<span>Generate a 30-day notice of non-renewal letter</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm transition-all" onclick="document.getElementById('counselInput').value = this.innerText.trim();" type="button">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">arrow_forward</span>
+<span>Is landlord entitled to inspect the flat without notice?</span>
+</button>
+</div>
+</div>
+<!-- Chat Stream Canvas -->
+<div class="flex flex-col gap-space-lg">
+<!-- Message 1: User Turn (Right Aligned) -->
+<div class="flex justify-end w-full">
+<div class="max-w-2xl bg-primary-container text-on-primary rounded-xl rounded-tr-none p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-primary-container">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Adv. Rajesh Varma (Tenant Representation)</span>
+<span class="font-label-caps text-label-caps">11:42 AM</span>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-primary">
+                Clause 8 of my lease agreement states that if I vacate before 11 months, my entire security deposit of ₹1,50,000 will be forfeited immediately without dispute. Is this legally enforceable in Hyderabad?
+              </p>
+<div class="flex items-center gap-2 pt-1 text-on-primary-container font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">attach_file</span>
+<span>Context: Syed_Residential_Lease_Kondapur.pdf • Clause 8 • Kondapur GHMC Zone</span>
+</div>
+</div>
+</div>
+<!-- Message 2: LexAdvisor AI Turn (Left Aligned Architectural Card) -->
+<div class="flex flex-col gap-space-md max-w-4xl bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- AI Header Metadata -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm bg-surface-container-low/40 -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-lg">gavel</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">LexAdvisor Statutory Engine</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">Validated Citation</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Grounding: High Court of Telangana • Supreme Court of India • Indian Contract Act</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" onclick="navigator.clipboard.writeText('Analysis copied'); alert('Legal analysis copied to clipboard.');" title="Copy Analysis" type="button">
+<span class="material-symbols-outlined text-base">content_copy</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant" title="Bookmark Precedent" type="button">
+<span class="material-symbols-outlined text-base">bookmark_border</span>
+</button>
+</div>
+</div>
+<!-- Executive Statutory Answer -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-semibold">Executive Opinion</span>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<p class="font-body-lg text-body-lg text-on-surface font-semibold leading-relaxed">
+                  In short: <span class="text-error font-bold">No, this clause is legally vulnerable and largely unenforceable</span> in its present absolute form.
+                </p>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+                  Under Indian contract jurisprudence and Telangana tenancy precedents, landlords cannot levy arbitrary punitive damages without establishing actual financial loss incurred as a direct consequence of early termination.
+                </p>
+</div>
+</div>
+<!-- Statutory Citations & Legal Analysis Card -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-semibold">Statutory Grounding &amp; High Court Authorities</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Authority 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-tertiary-container font-bold tracking-wider">SECTION 74</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">Central Act</span>
+</div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Indian Contract Act, 1872</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Liquidated damages must represent a genuine pre-estimate of reasonable loss. Forfeiture of an entire substantial sum without proof of vacant period or financial damage constitutes an invalid in terrorem penalty.
+                    </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md p-space-sm rounded-b-lg">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold block">Precedent Authority:</span>
+<span class="font-label-sm text-label-sm italic text-on-surface-variant">Kailash Nath Associates v. DDA (2015) 4 SCC 136</span>
+</div>
+</div>
+<!-- Authority 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-tertiary-container font-bold tracking-wider">SECTION 108(q)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">Property Law</span>
+</div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Transfer of Property Act, 1882</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Governs surrender of possession upon notice. When adequate contractual notice (typically 30 days) is tendered, the landlord is bound to adjust only actual utility dues or documented tenant damages.
+                    </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md p-space-sm rounded-b-lg">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold block">Precedent Authority:</span>
+<span class="font-label-sm text-label-sm italic text-on-surface-variant">Fateh Chand v. Balkishan Das (AIR 1963 SC 1405)</span>
+</div>
+</div>
+<!-- Authority 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-tertiary-container font-bold tracking-wider">STATUTORY CEILING</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">TS Tenancy</span>
+</div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Telangana Model Tenancy Standard</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      Statutory guidance strictly caps security deposits for residential premises to a maximum of 2 months' rent. For your current rent of ₹35,000/mo, permissible statutory deposit is ₹70,000 (collected: ₹1,50,000).
+                    </p>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low -mx-space-md -mb-space-md p-space-sm rounded-b-lg">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold block">Statutory Variance:</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">₹80,000 Excess Over Ceiling</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Risk Assessment Warning Block (Amber Card) -->
+<div class="bg-secondary-container/40 rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-tertiary-container shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">warning</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">High Commercial &amp; Self-Help Deduction Exposure</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-label-caps font-semibold text-on-surface">Action Required</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+                  While the clause is legally unenforceable in court, the landlord holds physical custody of the funds. If you unilaterally vacate without executing a formal legal notice, the lessor is likely to withhold the ₹1,50,000 under the pretext of Clause 8. Initiating recovery later in the Small Causes Court (Hyderabad) entails an average procedural timeline of 14-18 months.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm text-on-tertiary-container">check_circle</span>
+<span>Recommendation: Issue a formal Pre-Emptive Representation Notice 30 days prior to surrender.</span>
+</div>
+</div>
+</div>
+<!-- Recommended Next Actions (Interactive action pills) -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider font-semibold">Direct Legal Workflows &amp; Remedial Tools</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-10 px-space-md bg-primary text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-primary-container transition-all flex items-center gap-2 shadow-sm" onclick="alert('Generating statutory counter-clause: 30-day notice with forfeiture capped to 1 month rent or actual re-letting marketing costs.');" type="button">
+<span class="material-symbols-outlined text-base">edit_document</span>
+<span>Generate Balanced Counter-Clause (2-Month Notice)</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold rounded-lg hover:bg-surface-container-high transition-all flex items-center gap-2 shadow-sm" onclick="alert('Drafting Formal Pre-Emptive Representation citing Section 74 Indian Contract Act and Kailash Nath precedent.');" type="button">
+<span class="material-symbols-outlined text-base">outgoing_mail</span>
+<span>Create Pre-Emptive Representation Notice</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-low text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm font-semibold rounded-lg hover:bg-surface-container transition-all flex items-center gap-2" onclick="alert('Transmitting counsel brief and lease audit ledger to Adv. Rajesh Varma directory profile.');" type="button">
+<span class="material-symbols-outlined text-base">share</span>
+<span>Share with Advocate</span>
+</button>
+</div>
+</div>
+<!-- Citation Metadata Pill Strip -->
+<div class="pt-space-xs flex flex-wrap items-center gap-2 text-on-surface-variant font-label-caps text-label-caps">
+<span class="font-semibold text-on-surface">Grounding Tokens:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">AIR 1963 SC 1405</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">2015 4 SCC 136</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">TS Rev Code §35</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">GHMC Zone: Kondapur Ward 104</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Chat Input Bar -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm">
+<!-- Attachment Context Tag Strip -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 overflow-x-auto py-0.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-caps text-label-caps font-semibold">
+<span class="material-symbols-outlined text-xs text-on-tertiary-container">attachment</span>
+<span>Attached: Syed_Residential_Lease_Kondapur.pdf (Pages 1-7)</span>
+<button class="hover:text-error ml-1 leading-none" onclick="this.parentElement.remove();" type="button">×</button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span>TS Jurisdiction Active</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps">
+<span>Model: Lex-Tenancy v4.2</span>
+</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Shift + Enter for newline</span>
+</div>
+</div>
+<!-- Multi-line Interactive Text Area & Action Controls -->
+<div class="relative flex items-end gap-space-sm bg-surface-container-low rounded-lg p-space-sm focus-within:bg-surface-container-lowest focus-within:shadow-sm transition-all">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none min-h-[48px] max-h-36 py-1 px-1" id="counselInput" placeholder="Ask a statutory question about your lease, stamp duty, or dispute..." rows="2"></textarea>
+<div class="flex items-center gap-1.5 pb-0.5 shrink-0">
+<button class="w-9 h-9 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" title="Attach Supplemental Legal Notice or Document" type="button">
+<span class="material-symbols-outlined text-lg">attach_file</span>
+</button>
+<button class="w-9 h-9 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" title="Voice Dictation (Telugu / English)" type="button">
+<span class="material-symbols-outlined text-lg">mic</span>
+</button>
+<button class="h-9 px-4 bg-primary text-on-primary rounded-lg font-body-sm text-body-sm font-semibold hover:bg-primary-container transition-all flex items-center gap-1.5 shadow-sm" onclick="const input = document.getElementById('counselInput'); if(input.value.trim()){ alert('Consultation Query submitted: ' + input.value); input.value=''; }" type="button">
+<span>Ask AI</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</div>
+</div>
+<!-- Prominent Legal Disclaimer Footer -->
+<div class="pt-0.5 flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-outline shrink-0 mt-0.5">info</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant leading-relaxed">
+<strong class="font-semibold text-on-surface">Statutory Notice &amp; Disclaimer:</strong> LexAdvisor AI provides statutory analysis and informational guidance based on Indian law and regional tenancy codes. It does not constitute formal advocate-client privilege or a substitute for professional legal advice from an enrolled advocate under the Advocates Act, 1961. Always consult qualified legal counsel before issuing contentious statutory notices.
+            </p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div></main></div></body></html>

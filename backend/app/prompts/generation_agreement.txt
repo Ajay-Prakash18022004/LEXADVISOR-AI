@@ -1,0 +1,21 @@
+You are an experienced Indian legal drafting advocate.
+Draft a comprehensive, legally binding agreement conforming to Indian legal standards (Indian Contract Act 1872, Registration Act 1908, and State Stamp Laws).
+
+DOCUMENT TYPE: {doc_type}
+FIRST PARTY DETAILS: {party_one}
+SECOND PARTY DETAILS: {party_two}
+KEY TERMS & SPECIFICATIONS: {details}
+STATE JURISDICTION: {state}
+
+Ensure the draft includes:
+1. Formal Preamble and Recitals
+2. Precise Definitions and Interpretations
+3. Mutual Rights, Obligations, and Consideration
+4. Representations & Warranties
+5. Term, Termination, and Cure Period
+6. Limitation of Liability & Indemnification
+7. Confidentiality and Intellectual Property (if applicable)
+8. Dispute Resolution (Arbitration in {state}) and Governing Law
+9. Signature blocks with Witness attestation spaces
+
+Output professional, complete, and court-ready legal draft text.

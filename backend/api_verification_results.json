@@ -1,0 +1,74 @@
+{
+  "1. Document Upload (POST /documents/upload)": {
+    "endpoint": "POST /api/v1/documents/upload",
+    "status_code": 200,
+    "success": true,
+    "doc_id": 53,
+    "response_summary": "Uploaded doc ID 53 ('Sunitha_Tenancy_Doc_Audit.txt')"
+  },
+  "2. Document Listing (GET /documents)": {
+    "endpoint": "GET /api/v1/documents",
+    "status_code": 200,
+    "success": true,
+    "count": 11,
+    "response_summary": "Found 11 documents for user"
+  },
+  "3. Document Analysis (GET /documents/{id}/analysis)": {
+    "endpoint": "GET /api/v1/documents/53/analysis",
+    "status_code": 200,
+    "success": true,
+    "response_summary": "Validity: valid, BSA 63 Certified: True"
+  },
+  "4. Stamp Duty Assessment (POST /stamp/analyze)": {
+    "endpoint": "POST /api/v1/stamp/analyze",
+    "status_code": 200,
+    "success": true,
+    "duty_payable": null,
+    "deficit": null,
+    "response_summary": "Risk level: low, Deficit: Rs. None"
+  },
+  "5. Clause Risk Analysis (POST /risk/analyze)": {
+    "endpoint": "POST /api/v1/risk/analyze",
+    "status_code": 200,
+    "success": true,
+    "overall_score": null,
+    "flagged_clauses": 0,
+    "response_summary": "Overall score: None, Flagged: 0 clauses"
+  },
+  "6. Legal Action Roadmap (POST /actions/recommend)": {
+    "endpoint": "POST /api/v1/actions/recommend",
+    "status_code": 200,
+    "success": true,
+    "steps_count": 0,
+    "response_summary": "Generated 0 immediate remedial actions"
+  },
+  "7. Documents Vault / Drafts (GET /documents/user/drafts)": {
+    "endpoint": "GET /api/v1/documents/user/drafts",
+    "status_code": 200,
+    "success": true,
+    "drafts_count": 5,
+    "response_summary": "Retrieved 5 generated legal drafts"
+  },
+  "8. Advocate Directory (GET /advocates)": {
+    "endpoint": "GET /api/v1/advocates",
+    "status_code": 200,
+    "success": true,
+    "advocates_count": 8,
+    "sample_advocate": "Adv. Ramesh V. Kulkarni",
+    "response_summary": "Found 8 registered advocates. Selected: Adv. Ramesh V. Kulkarni"
+  },
+  "9. Appointment Booking (POST /advocates/{id}/book)": {
+    "endpoint": "POST /api/v1/advocates/1/book",
+    "status_code": 200,
+    "success": true,
+    "appointment_id": 28,
+    "response_summary": "Appointment booked (ID: 28, Slot: 02:30 PM, Status: pending)"
+  },
+  "10. AI Chatbot (POST /chat/ask)": {
+    "endpoint": "POST /api/v1/chat/ask",
+    "status_code": 200,
+    "success": true,
+    "response_length": 846,
+    "response_summary": "Generated 846 chars of statutory analysis referencing ICA Sec 74 & TPA Sec 106"
+  }
+}

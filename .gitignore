@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+storage/uploads/*
+storage/generated_pdfs/*
+!storage/uploads/.gitkeep
+!storage/generated_pdfs/.gitkeep
+node_modules/
+dist/
+.DS_Store
+Thumbs.db

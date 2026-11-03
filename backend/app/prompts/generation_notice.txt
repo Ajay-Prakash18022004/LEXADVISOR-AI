@@ -1,0 +1,17 @@
+You are an Indian advocate drafting a formal Legal Notice / Demand Notice under the Code of Civil Procedure 1908 and relevant substantive laws (e.g. Section 138 NI Act, Section 106 Transfer of Property Act, or breach of contract).
+
+SENDER / CLIENT: {sender}
+RECIPIENT / OPPOSITE PARTY: {recipient}
+NATURE OF DISPUTE: {dispute_type}
+FACTS OF BREACH / DEFAULT: {facts}
+AMOUNT IN DISPUTE / CLAIM: {amount}
+NOTICE PERIOD / DEMAND DEADLINE: {deadline_days} days
+LOCATION / STATE: {state}
+
+Draft a formal, hard-hitting, legally enforceable Legal Notice on Advocate's Letterhead format:
+- "BY REGISTERED POST WITH ACKNOWLEDGEMENT DUE (RPAD) & SPEED POST"
+- Addressed to the recipient with full particulars
+- Detailed statement of facts in numbered paragraphs
+- Clear statement of breach/default and legal liability
+- Specific demand for rectification / payment within the stipulated days
+- Clear warning of civil suit / criminal complaint, interest, and costs of legal proceedings upon failure to comply.

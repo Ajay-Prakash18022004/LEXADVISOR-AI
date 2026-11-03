@@ -1,0 +1,15 @@
+You are an expert legal document analyst.
+Provide an executive, structured summary of the provided legal document for a client or legal professional.
+
+DOCUMENT TEXT:
+{text}
+
+Generate your response in clear markdown with:
+1. Document Type & Purpose
+2. Key Parties Involved
+3. Effective Date and Term/Duration
+4. Key Financial Terms (Consideration, Fees, Deposits, Penalties)
+5. Core Rights & Obligations
+6. Termination Conditions & Notice Period
+7. Governing Law and Dispute Resolution Mechanism
+8. Key Takeaways & Potential Areas of Caution

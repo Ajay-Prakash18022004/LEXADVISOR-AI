@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#3c475a","surface-tint":"#565e74","primary-fixed-dim":"#bec6e0","outline":"#76777d","secondary-fixed":"#d8e3fb","on-primary-fixed-variant":"#3f465c","on-tertiary-container":"#c76c00","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","secondary-fixed-dim":"#bcc7de","on-tertiary-fixed":"#2f1500","tertiary-fixed-dim":"#ffb77d","inverse-on-surface":"#eaf1ff","secondary-container":"#d5e0f8","surface-dim":"#cbdbf5","primary-fixed":"#dae2fd","inverse-surface":"#213145","primary":"#000000","error":"#ba1a1a","surface-container":"#e5eeff","background":"#f8f9ff","on-background":"#0b1c30","surface":"#f8f9ff","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","tertiary":"#000000","on-tertiary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-container":"#2f1500","surface-container-high":"#dce9ff","on-error":"#ffffff","on-surface-variant":"#45464d","on-secondary":"#ffffff","primary-container":"#131b2e","surface-bright":"#f8f9ff","on-secondary-container":"#586377","outline-variant":"#c6c6cd","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","on-secondary-fixed":"#111c2d","inverse-primary":"#bec6e0","on-tertiary":"#ffffff","secondary":"#545f73","on-surface":"#0b1c30"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"title-md":["Plus Jakarta Sans"],"metric-number":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"body-lg":["1.125rem",{lineHeight:"1.6",letterSpacing:"0em",fontWeight:"400"}],"body-md":["0.9375rem",{lineHeight:"1.55",letterSpacing:"0em",fontWeight:"400"}],"label-caps":["0.6875rem",{lineHeight:"1.2",letterSpacing:"0.06em",fontWeight:"600"}],"title-md":["1rem",{lineHeight:"1.4",letterSpacing:"-0.005em",fontWeight:"600"}],"metric-number":["1.75rem",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["1.75rem",{lineHeight:"1.25",letterSpacing:"-0.015em",fontWeight:"700"}],"display":["3rem",{lineHeight:"1.15",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1.3",letterSpacing:"0.01em",fontWeight:"500"}],"headline-md":["1.5rem",{lineHeight:"1.3",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.8125rem",{lineHeight:"1.5",letterSpacing:"0.005em",fontWeight:"400"}],"headline-sm":["1.25rem",{lineHeight:"1.35",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="LexAdvisor AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UA50Qpnx2FlDtqnWHOHKNKr1rFeZJVhFcjIFLVIP9Kokp2Es1JOXT5s3tZQlV7fFD4ln7fgmA5jvkIwFysMWVia5sZseUeQeRxxp7BOAHsjDBY1zPg8cUY-_fV1XdzeI0quNhtTWM2P2QmdNRpBtIb7OdPJDnuw_SJ9BtJT1heDFOcvBuGaSA2nGIuPY3MLdVriOG7TvXUCfd2NKSRdXbr4w6cMomGcxQiSTNmkAw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold tracking-tight leading-none">LexAdvisor AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1 tracking-wider">Intelligent Legal Assistance</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Overview</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-body-sm text-body-sm">Dashboard</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Document Intelligence</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container" data-path="document-analysis" href="#"><span class="material-symbols-outlined text-lg">description</span><span class="font-body-sm text-body-sm">Document Analysis</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="stamp-duty-auditor" href="#"><span class="material-symbols-outlined text-lg">verified_user</span><span class="font-body-sm text-body-sm">Stamp Duty Auditor</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="clause-risk-analyzer" href="#"><span class="material-symbols-outlined text-lg">policy</span><span class="font-body-sm text-body-sm">Clause Risk Analyzer</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="action-roadmap" href="#"><span class="material-symbols-outlined text-lg">alt_route</span><span class="font-body-sm text-body-sm">Action Roadmap</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Management</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rent-and-deadlines" href="#"><span class="material-symbols-outlined text-lg">event_available</span><span class="font-body-sm text-body-sm">Rent &amp; Deadlines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="advocate-directory" href="#"><span class="material-symbols-outlined text-lg">gavel</span><span class="font-body-sm text-body-sm">Advocate Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="my-consultations" href="#"><span class="material-symbols-outlined text-lg">forum</span><span class="font-body-sm text-body-sm">My Consultations</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">AI Assistance</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-legal-counsel" href="#"><span class="material-symbols-outlined text-lg">smart_toy</span><span class="font-body-sm text-body-sm">AI Legal Counsel</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/60 space-y-space-xs"><div class="space-y-1"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help-and-support" href="#"><span class="material-symbols-outlined text-lg">support</span><span class="font-body-sm text-body-sm">Help &amp; Support</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="font-body-sm text-body-sm">Settings</span></a></div><div class="pt-space-xs flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm"><div class="h-8 w-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-xs shrink-0">RV</div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Adv. Rajesh Varma</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">High Court / Citizen Portal</span></div></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-sm">home</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm">Statutory Intelligence</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Dashboard</span></div><div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface font-semibold">TS &amp; AP Jurisdiction</span></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="h-10 pl-9 pr-12 w-64 lg:w-72 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search statutes, petitions, acts..." type="text"/><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div><button class="h-10 px-space-md bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-on-background transition-colors flex items-center gap-1.5 shadow-sm" type="button"><span class="material-symbols-outlined text-lg">add</span><span>Analyze New Document</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD447UJPPEezZxzVigU31EBwZxWytn_JKxY7__Ztvq8fDvCw4iowqRHFQim_XnmaayUnQqRQxcqYUt_Dpc9WXFZerr106tfK8q9N1oAlCXmrY6gkxF1vM-j-sf_IL7f5R8yxIdWWZ9XLNlFLt0ozw347tHYdojhUTX7OaGh1t5JiaU13UT-qCKkTmbiPyV072d_vws14OkR-yhdw-Al4BtgJAy1DeHkPSgtPCrdbSQ"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="max-w-7xl mx-auto px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Header & Meta Command Deck -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps mb-2">
+<span class="material-symbols-outlined text-sm">verified</span>
+          ACT SECTION 107 • TRANSFER OF PROPERTY ACT COMPLIANCE
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Document Analysis</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Review your uploaded agreements and understand their legal implications under local statutory rules.</p>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<button class="h-10 px-3.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm rounded-lg font-body-sm text-body-sm font-semibold flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base text-secondary">download</span>
+<span>Annotated PDF</span>
+</button>
+<button class="h-10 px-3.5 bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors shadow-sm rounded-lg font-body-sm text-body-sm font-semibold flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base text-secondary">summarize</span>
+<span>Legal Brief</span>
+</button>
+<button class="h-10 px-4 bg-primary text-on-primary hover:bg-inverse-surface transition-colors shadow-sm rounded-lg font-body-sm text-body-sm font-semibold flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>Share with Advocate</span>
+</button>
+</div>
+</div>
+<!-- Document Meta Ribbon -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-space-md flex flex-wrap items-center justify-between gap-y-3 gap-x-space-lg">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Syed_Residential_Lease_Kondapur.pdf</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase">Hyderabad (GHMC)</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+<span>Residential Tenancy Agreement</span>
+<span class="text-outline-variant">•</span>
+<span>Uploaded Oct 24, 2024, 11:32 AM</span>
+<span class="text-outline-variant">•</span>
+<span>7 Pages (2.4 MB)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface font-semibold uppercase tracking-wider">AI Audit Complete</span>
+</div>
+<div class="hidden lg:flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>Model: LEx-Tenancy-v4.2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Analysis Overview Stat Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Extracted Scope</span>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">28</div>
+</div>
+<span class="p-2 rounded-lg bg-surface-container-low text-secondary material-symbols-outlined text-xl">segment</span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Total Clauses Detected</span>
+<span class="text-secondary font-semibold">100% Parsed</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Omissions</span>
+<div class="font-headline-lg text-headline-lg text-error font-bold mt-1">3 Missing</div>
+</div>
+<span class="p-2 rounded-lg bg-error-container text-on-error-container material-symbols-outlined text-xl">warning_amber</span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate">Notice, refund &amp; maintenance</span>
+<span class="text-error font-semibold">High Priority</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Enforceability Risk</span>
+<div class="font-headline-lg text-headline-lg text-on-tertiary-container font-bold mt-1">4 Flagged</div>
+</div>
+<span class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed-variant material-symbols-outlined text-xl">gavel</span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate">Arbitrary lock-in &amp; penalty</span>
+<span class="text-on-tertiary-container font-semibold">Action Required</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Statutory Duty</span>
+<div class="font-headline-lg text-headline-lg text-error font-bold mt-1">-₹2,300</div>
+</div>
+<span class="p-2 rounded-lg bg-error-container text-on-error-container material-symbols-outlined text-xl">receipt_long</span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate">Stamp Discrepancy (TS Reg.)</span>
+<span class="text-error font-semibold">Deficient</span>
+</div>
+</div>
+</div>
+<!-- Two-Column Split Document Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: High-Fidelity PDF Viewer Workspace (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- PDF Action Toolbar -->
+<div class="p-3 bg-surface-container-low flex flex-wrap items-center justify-between gap-2">
+<!-- Page navigation -->
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">navigate_before</span>
+</button>
+<span class="px-2 font-label-sm text-label-sm text-on-surface font-semibold">Page 3 of 7</span>
+<button class="w-8 h-8 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">navigate_next</span>
+</button>
+<div class="h-4 w-px bg-outline-variant mx-1"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CLAUSE RECONCILIATION VIEW</span>
+</div>
+<!-- Document View Controls -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded px-2 py-1 shadow-xs gap-1">
+<button class="text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="font-label-sm text-label-sm px-1.5 font-medium text-on-surface">100%</span>
+<button class="text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">search</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">fit_screen</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- PDF Canvas Viewport -->
+<div class="p-6 md:p-10 bg-surface-dim/40 overflow-y-auto max-h-[820px] flex justify-center">
+<!-- Stamp Bond Sheet Layout Mockup -->
+<div class="w-full max-w-2xl bg-surface-container-lowest shadow-md rounded-sm p-8 sm:p-12 relative font-serif text-on-surface select-text leading-relaxed">
+<!-- Top Watermark Bond Header Strip -->
+<div class="mb-8 p-4 bg-tertiary-fixed/30 rounded flex items-center justify-between text-on-tertiary-fixed font-sans">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container">military_tech</span>
+<div>
+<p class="font-label-caps text-label-caps font-bold tracking-wider uppercase text-on-tertiary-fixed">GOVERNMENT OF TELANGANA • NON-JUDICIAL</p>
+<p class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Certificate No: IN-TS78291410982301V | Duty: ₹100</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps bg-error-container text-on-error-container px-2 py-0.5 rounded font-bold">DUTY INSUFFICIENT</span>
+</div>
+</div>
+<!-- Document Content Mockup -->
+<div class="space-y-6 text-sm font-serif text-justify text-on-surface/90">
+<div class="text-center font-sans uppercase tracking-wider font-bold text-base mb-6 border-b pb-2 text-on-surface">
+              Residential Tenancy Agreement (Page 3)
+            </div>
+<p class="font-body-sm text-body-sm">
+<strong class="font-bold">7. PERMITTED OCCUPANCY:</strong> The Tenant shall use the Schedule Premises exclusively for private residential dwellings of the Tenant and his bona fide nuclear family only. Commercial utilization or subletting of any part is explicitly forbidden.
+            </p>
+<!-- RED HIGHLIGHT BOX: Clause 8 (Lock-in Period & 6-Month Deposit Forfeiture) -->
+<div class="relative bg-error-container/40 p-4 rounded-lg my-4 shadow-xs">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-caps text-label-caps uppercase font-bold tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">gavel</span> Flagged: High Risk (Clause 8)
+                </span>
+<span class="font-label-caps text-label-caps text-error font-bold uppercase">Severe Forfeiture Risk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed">
+<strong class="text-error">8. LOCK-IN PERIOD &amp; LIQUIDATED FORFEITURE:</strong> The Tenant hereby agrees to an irrevocable lock-in period of twenty-four (24) months. In the event the Tenant vacates, surrenders, or breaches possession prior to completion of twenty-four months, the Lessor retains absolute right to <span class="bg-error/20 px-1 py-0.5 font-bold text-on-error-container">forfeit the entirety of the 6-Month Security Deposit (INR 1,80,000)</span> with immediate effect without right of set-off or judicial appeal, retaining withholding control for 180 days post possession.
+              </p>
+<div class="mt-2 text-xs font-sans text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-sm">info</span>
+<span>Unenforceable under Sec. 74 Indian Contract Act &amp; TS Tenancy Norms (Arbitrary liquidated penalty).</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm">
+<strong class="font-bold">9. UTILITIES AND MAINTENANCE CHARGES:</strong> The Lessee agrees to remit monthly maintenance directly to the Resident Welfare Association (RWA) along with proportionate generator fuel levies as computed monthly.
+            </p>
+<p class="font-body-sm text-body-sm">
+<strong class="font-bold">10. DELAYED RENTAL SURCHARGES:</strong> Rent must be disbursed prior to the 5th calendar day of each cycle. Arrears exceeding 3 business days shall attract penal interest calculated at eighteen percent (18%) per calendar month.
+            </p>
+<!-- BLUE DASHED BOX: Missing Protective Clause (Notice Period) -->
+<div class="relative bg-surface-container p-4 rounded-lg my-4 shadow-inner">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-bold tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">add_moderator</span> Missing Statutory Protective Clause
+                </span>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase">Tenant Safeguard Missing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                [STATUTORY SAFEGUARD OMITTED HERE]: "Mutual 30-Day Termination Notice with Grace Period for Involuntary Relocation or Economic Hardship, requiring security deposit reconciliation within 7 working days of keys handover."
+              </p>
+<div class="mt-2 text-xs font-sans text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">psychology</span>
+<span>Recommended injection: Standard Model Tenancy Act (MTA) Section 21 Clause.</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm">
+<strong class="font-bold">11. STRUCTURAL ALTERATIONS:</strong> No civil additions, wall drilling for heavy mounts, or wiring alterations without prior written consent from the registered lessor.
+            </p>
+<!-- AMBER HIGHLIGHT BOX: Clause 12 (Right of Entry Without Notice) -->
+<div class="relative bg-tertiary-fixed/40 p-4 rounded-lg my-4 shadow-xs">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded bg-on-tertiary-container text-on-tertiary font-label-caps text-label-caps uppercase font-bold tracking-wider inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">report_problem</span> Flagged: Medium Risk (Clause 12)
+                </span>
+<span class="font-label-caps text-label-caps text-on-tertiary-container font-bold uppercase">Privacy Infringement</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed">
+<strong class="text-on-tertiary-fixed-variant">12. RIGHT OF INSPECTION AND ENTRY:</strong> The Lessor or authorized property agents reserve unrestricted liberty to <span class="bg-tertiary-fixed-dim/60 px-1 py-0.5 font-bold text-on-tertiary-fixed">enter upon the scheduled property at any time without advance written notification</span> to verify sanitary status, structural integrity, or conduct site viewings for future purchasers.
+              </p>
+<div class="mt-2 text-xs font-sans text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">privacy_tip</span>
+<span>Violates Quiet Enjoyment Doctrine and Sec. 108 Transfer of Property Act; standard requires 24h prior written notice.</span>
+</div>
+</div>
+</div>
+<!-- Document Footer Pagination -->
+<div class="mt-10 pt-4 flex items-center justify-between text-xs text-outline-variant font-sans">
+<span>Residential Lease Deed - Kondapur, Hyderabad</span>
+<span>Page 3 of 7</span>
+<span>Lessee Initials: [ _______ ]</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Deck Footer -->
+<div class="p-3 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hover over highlighted sections to trigger AI citations.</span>
+<button class="text-secondary hover:text-on-secondary-fixed text-label-sm font-label-sm font-semibold flex items-center gap-1" type="button">
+<span>Expand to Full Legal Reader</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- RIGHT COLUMN: AI Document Intelligence Panel (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Executive Summary Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-2.5 mb-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Executive AI Summary</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Telangana Jurisdiction Model</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          AI-generated executive summary of the tenancy agreement highlighting unilateral power imbalances and deposit forfeiture risks under Telangana Tenancy norms. The agreement skews remedies heavily toward the lessor, omitting mandatory cure periods and applying punitive interest that exceeds statutory usury thresholds.
+        </p>
+<!-- Risk Gauge & Metric Meter -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 flex items-center justify-center shrink-0">
+<!-- Radial SVG Gauge -->
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-surface-container-highest" cx="18" cy="18" fill="none" r="15" stroke-width="3"></circle>
+<circle class="stroke-error" cx="18" cy="18" fill="none" r="15" stroke-dasharray="94.2" stroke-dashoffset="32" stroke-width="3"></circle>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm font-bold text-on-surface">66</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-error uppercase font-bold tracking-wider">Severe Legal Risk</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Overall Contract Health</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">4 Red Flags</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Requires Revision</p>
+</div>
+</div>
+</div>
+<!-- Important Findings List -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Important Findings</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant uppercase">3 Critical Items</span>
+</div>
+<div class="space-y-space-md">
+<!-- Finding 1 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 font-bold text-xs">1</div>
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-body-sm text-body-sm font-bold text-on-surface">Severe Deposit Retention Risk</h4>
+<span class="font-label-caps text-label-caps text-error uppercase font-semibold">Clause 8</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Clause 8 empowers the lessor to withhold security deposit (INR 1,80,000) for 180 days post-handover. Under local practices, 30 days is standard.
+              </p>
+</div>
+</div>
+<!-- Finding 2 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0 font-bold text-xs">2</div>
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-body-sm text-body-sm font-bold text-on-surface">Lack of Statutory Notice Period</h4>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase font-semibold">Missing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                No 30-day cure period for non-wilful rent default before termination. Exposes tenant to immediate eviction actions under Sec. 106.
+              </p>
+</div>
+</div>
+<!-- Finding 3 -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 font-bold text-xs">3</div>
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-body-sm text-body-sm font-bold text-on-surface">Defective Stamp Paper Execution</h4>
+<span class="font-label-caps text-label-caps text-error uppercase font-semibold">Fiscal Discrepancy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                Executed on ₹100 non-judicial stamp paper while statutory requirement for 11+ month leases in Telangana is 0.4% or minimum threshold (Deficient by ₹2,300).
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Legal Risk Breakdown & Statutory Ratio -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Clause Vulnerability Breakdown</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">By Category</span>
+</div>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Financial &amp; Deposit Security</span>
+<span class="text-error font-bold">High Risk (78%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="bg-error h-full rounded" style="width: 78%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Tenure, Lock-In &amp; Termination</span>
+<span class="text-on-tertiary-container font-bold">Moderate Risk (56%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="bg-on-tertiary-container h-full rounded" style="width: 56%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Repairs &amp; Habitability Rights</span>
+<span class="text-secondary font-bold">Standard Risk (22%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 22%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended Immediate Actions Deck -->
+<div class="bg-primary-container text-on-primary p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-xl">verified_user</span>
+<h3 class="font-title-md text-title-md font-bold text-on-primary">Recommended Immediate Actions</h3>
+</div>
+<p class="font-body-sm text-body-sm text-surface-variant/90 leading-relaxed mb-space-md">
+            Do not execute the deed in its present form. Exercise your right to request amendments or counter-drafts using statutory clauses recognized by Hyderabad civil registry.
+          </p>
+</div>
+<div class="flex flex-col gap-2.5">
+<a class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-between shadow-xs" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-on-tertiary-container">policy</span>
+              View Clause Risk Analyzer
+            </span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-between shadow-xs" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-error">calculate</span>
+              Audit Stamp Duty Deficit (₹2,300)
+            </span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<button class="h-10 px-4 rounded-lg bg-on-tertiary-container text-on-tertiary hover:bg-on-tertiary-fixed-variant transition-colors font-body-sm text-body-sm font-semibold flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">edit_document</span>
+<span>Generate Counter-Draft Notice</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></div></main></div></body></html>

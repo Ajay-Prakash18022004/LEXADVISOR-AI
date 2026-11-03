@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#3c475a","surface-tint":"#565e74","primary-fixed-dim":"#bec6e0","outline":"#76777d","secondary-fixed":"#d8e3fb","on-primary-fixed-variant":"#3f465c","on-tertiary-container":"#c76c00","on-primary-fixed":"#131b2e","on-primary-container":"#7c839b","secondary-fixed-dim":"#bcc7de","on-tertiary-fixed":"#2f1500","tertiary-fixed-dim":"#ffb77d","inverse-on-surface":"#eaf1ff","secondary-container":"#d5e0f8","surface-dim":"#cbdbf5","primary-fixed":"#dae2fd","inverse-surface":"#213145","primary":"#000000","error":"#ba1a1a","surface-container":"#e5eeff","background":"#f8f9ff","on-background":"#0b1c30","surface":"#f8f9ff","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","tertiary":"#000000","on-tertiary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-container":"#2f1500","surface-container-high":"#dce9ff","on-error":"#ffffff","on-surface-variant":"#45464d","on-secondary":"#ffffff","primary-container":"#131b2e","surface-bright":"#f8f9ff","on-secondary-container":"#586377","outline-variant":"#c6c6cd","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","error-container":"#ffdad6","surface-container-highest":"#d3e4fe","on-secondary-fixed":"#111c2d","inverse-primary":"#bec6e0","on-tertiary":"#ffffff","secondary":"#545f73","on-surface":"#0b1c30"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-xl":"2rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem","space-md":"1rem"},fontFamily:{"body-lg":["Inter"],"body-md":["Inter"],"label-caps":["Inter"],"title-md":["Plus Jakarta Sans"],"metric-number":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"body-lg":["1.125rem",{lineHeight:"1.6",letterSpacing:"0em",fontWeight:"400"}],"body-md":["0.9375rem",{lineHeight:"1.55",letterSpacing:"0em",fontWeight:"400"}],"label-caps":["0.6875rem",{lineHeight:"1.2",letterSpacing:"0.06em",fontWeight:"600"}],"title-md":["1rem",{lineHeight:"1.4",letterSpacing:"-0.005em",fontWeight:"600"}],"metric-number":["1.75rem",{lineHeight:"1",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["1.75rem",{lineHeight:"1.25",letterSpacing:"-0.015em",fontWeight:"700"}],"display":["3rem",{lineHeight:"1.15",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["0.75rem",{lineHeight:"1.3",letterSpacing:"0.01em",fontWeight:"500"}],"headline-md":["1.5rem",{lineHeight:"1.3",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["0.8125rem",{lineHeight:"1.5",letterSpacing:"0.005em",fontWeight:"400"}],"headline-sm":["1.25rem",{lineHeight:"1.35",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col h-full overflow-hidden"><div class="h-20 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="LexAdvisor AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UA50Qpnx2FlDtqnWHOHKNKr1rFeZJVhFcjIFLVIP9Kokp2Es1JOXT5s3tZQlV7fFD4ln7fgmA5jvkIwFysMWVia5sZseUeQeRxxp7BOAHsjDBY1zPg8cUY-_fV1XdzeI0quNhtTWM2P2QmdNRpBtIb7OdPJDnuw_SJ9BtJT1heDFOcvBuGaSA2nGIuPY3MLdVriOG7TvXUCfd2NKSRdXbr4w6cMomGcxQiSTNmkAw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface font-bold tracking-tight leading-none">LexAdvisor AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1 tracking-wider">Intelligent Legal Assistance</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm space-y-space-md"><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Overview</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="font-body-sm text-body-sm">Dashboard</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Document Intelligence</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="document-analysis" href="#"><span class="font-body-sm text-body-sm">Document Analysis</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="stamp-duty-auditor" href="#"><span class="font-body-sm text-body-sm">Stamp Duty Auditor</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="clause-risk-analyzer" href="#"><span class="font-body-sm text-body-sm">Clause Risk Analyzer</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="action-roadmap" href="#"><span class="font-body-sm text-body-sm">Action Roadmap</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Management</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rent-deadlines" href="#"><span class="font-body-sm text-body-sm">Rent &amp; Deadlines</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="advocate-directory" href="#"><span class="font-body-sm text-body-sm">Advocate Directory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="consultations" href="#"><span class="font-body-sm text-body-sm">My Consultations</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">AI Assistance</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="ai-counsel" href="#"><span class="font-body-sm text-body-sm">AI Legal Counsel</span></a></nav></div></div><div class="p-space-md bg-surface-container-low/60 space-y-space-xs"><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm border-l-4 border-on-tertiary-container"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="font-body-sm text-body-sm">Help &amp; Support</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="font-body-sm text-body-sm">Settings</span></a></nav><div class="pt-space-xs flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm"><div class="h-8 w-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-xs shrink-0">RV</div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Adv. Rajesh Varma</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">High Court / Citizen Portal</span></div></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-sm">home</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm">Statutory Intelligence</span><span class="font-label-sm text-label-sm text-outline-variant">/</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">Dashboard</span></div><div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface font-semibold">TS &amp; AP Jurisdiction</span></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="h-10 pl-9 pr-12 w-64 lg:w-72 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search statutes, petitions, acts..." type="text"/><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div><button class="h-10 px-space-md bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-on-background transition-colors flex items-center gap-1.5 shadow-sm" type="button"><span class="material-symbols-outlined text-lg">add</span><span>Analyze New Document</span></button><button class="relative h-10 w-10 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD447UJPPEezZxzVigU31EBwZxWytn_JKxY7__Ztvq8fDvCw4iowqRHFQim_XnmaayUnQqRQxcqYUt_Dpc9WXFZerr106tfK8q9N1oAlCXmrY6gkxF1vM-j-sf_IL7f5R8yxIdWWZ9XLNlFLt0ozw347tHYdojhUTX7OaGh1t5JiaU13UT-qCKkTmbiPyV072d_vws14OkR-yhdw-Al4BtgJAy1DeHkPSgtPCrdbSQ"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header / Breadcrumb & View Title Bar -->
+<section class="px-space-xl py-space-lg bg-surface-container-lowest shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Statutory Intelligence</span>
+<span class="font-label-sm text-label-sm text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Rent &amp; Deadlines</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Rent &amp; Deadline Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Track tenancy rent cycles, statutory notice windows, agreement expiries, and escrow deposits with precision across regional jurisdictions.
+      </p>
+</div>
+<!-- Quick Action Toolbars -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-10 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors rounded-lg font-body-sm text-body-sm font-semibold shadow-sm flex items-center gap-space-xs" id="btn-export-stmt" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">file_download</span>
+<span>Export Statement</span>
+</button>
+<button class="h-10 px-space-md bg-primary-container text-on-primary hover:bg-on-background transition-colors rounded-lg font-body-sm text-body-sm font-semibold shadow-sm flex items-center gap-space-xs" id="btn-open-reminder-modal" type="button">
+<span class="material-symbols-outlined text-lg">alarm_add</span>
+<span>+ Add Custom Reminder</span>
+</button>
+</div>
+</section>
+<!-- Content Stream -->
+<div class="p-space-xl flex flex-col gap-space-xl">
+<!-- Top Row Grid: Hero Countdown & Telemetry Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- 1. Hero Card: Next Payment Due -->
+<div class="relative overflow-hidden bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 bg-surface-tint/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-on-primary-container">Next Payment Due</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              NEFT Auto-Sched
+            </span>
+</div>
+<div class="mt-2 flex items-baseline justify-between">
+<div>
+<span class="font-display text-display font-extrabold tracking-tight text-on-primary">₹35,000</span>
+<p class="font-label-sm text-label-sm text-on-primary-container mt-1">Due Date: <span class="font-semibold text-on-primary">Nov 05, 2024</span></p>
+</div>
+<!-- Circular Progress Dial Telemetry -->
+<div class="relative w-14 h-14 flex items-center justify-center shrink-0">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-tint/30" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-secondary-fixed" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="40" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-caps text-label-caps font-bold leading-none text-on-primary">12D</span>
+<span class="text-[9px] font-label-caps text-on-primary-container leading-none">Left</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-2 z-10">
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2 px-space-sm bg-secondary-container text-on-secondary-fixed hover:bg-secondary-fixed-dim rounded-lg font-body-sm text-body-sm font-semibold transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+<span>Log Receipt</span>
+</button>
+<button class="flex-1 py-2 px-space-sm bg-on-tertiary-container text-on-tertiary hover:opacity-95 rounded-lg font-body-sm text-body-sm font-semibold transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Pay Escrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. Security Deposit Guard -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-on-surface-variant">Security Deposit Guard</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-xs">shield</span>
+              Deed Protected
+            </span>
+</div>
+<div class="mt-2">
+<span class="font-display text-display font-bold tracking-tight text-on-surface">₹1,50,000</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Lessor: <span class="font-semibold text-on-surface">K. R. V. Rao (Advocate Hold)</span></p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mt-2 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-tertiary-container font-label-caps text-label-caps font-semibold">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>30-Day Mandatory Refund</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-snug">
+              Under TS Tenancy Model, deposit refund is required within 30 days post-possession handover.
+            </p>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Claims / Deductions:</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">₹0 (Zero logged)</span>
+</div>
+</div>
+<!-- 3. Tenancy Tenor & Expiry -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-on-surface-variant">Tenancy Tenor &amp; Expiry</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">
+              11 Months Stamped
+            </span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-2">
+<span class="font-display text-display font-bold tracking-tight text-on-surface">330</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Days Left</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">
+<span class="font-semibold text-on-surface">20 Oct 2024</span> — <span class="font-semibold text-on-surface">19 Sep 2025</span>
+</p>
+</div>
+<!-- Progress Bar of Tenor -->
+<div class="w-full bg-surface-container-high rounded-full h-2 mt-2 overflow-hidden">
+<div class="bg-on-tertiary-container h-2 rounded-full" style="width: 8%;"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Elapsed: 8.2% of term completed</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low mt-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-on-surface">notification_important</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps font-semibold text-on-surface uppercase">Renewal Notice Window</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Due by Jul 19, 2025 (60-Day Prior)</span>
+</div>
+</div>
+</div>
+<!-- 4. Statutory Compliance Alerts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps tracking-wider uppercase text-error font-semibold">Statutory Compliance Alert</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-bold text-on-surface leading-tight">Sec. 106 T.P. Act</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Notice Period Mandate</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Statutory 30-day formal registered post notice must precede termination. Oral intimations carry zero evidentiary admissibility in civil court.
+          </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-tertiary-container">TS Tenancy Bill 2021 Ready</span>
+<button class="text-on-secondary-container hover:text-on-surface font-label-caps text-label-caps font-bold underline flex items-center gap-0.5" type="button">
+            Audit Clause
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Monthly Calendar & Deadline Schedules (Main 2-Column Section: 7 cols & 5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Interactive Month Calendar (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Calendar Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">November 2024</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Jurisdiction: GHMC Hyderabad Rent Docket</p>
+</div>
+</div>
+<!-- Controls: Month Switcher & Filter -->
+<div class="flex items-center gap-1.5">
+<div class="inline-flex rounded-lg bg-surface-container-low p-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="px-2 py-0.5 font-label-caps text-label-caps font-semibold text-on-surface" type="button">Today</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-caps text-label-caps font-semibold flex items-center gap-1 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-xs">filter_list</span>
+<span>Filter Events</span>
+</button>
+</div>
+</div>
+<!-- Days of Week Header -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider py-1 bg-surface-container-low/50 rounded-lg">
+<div>Sun</div>
+<div>Mon</div>
+<div>Tue</div>
+<div>Wed</div>
+<div>Thu</div>
+<div>Fri</div>
+<div>Sat</div>
+</div>
+<!-- 35-Day Grid for Nov 2024 (Nov 1 is Friday) -->
+<div class="grid grid-cols-7 gap-1.5">
+<!-- Previous Month trailing (Oct 27 - 31) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low/30 text-outline-variant flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-medium">27</span>
+</div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low/30 text-outline-variant flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-medium">28</span>
+</div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low/30 text-outline-variant flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-medium">29</span>
+</div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low/30 text-outline-variant flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-medium">30</span>
+</div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low/30 text-outline-variant flex flex-col justify-between">
+<span class="font-label-sm text-label-sm font-medium">31</span>
+</div>
+<!-- Nov 1 (Fri) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">1</span>
+</div>
+<!-- Nov 2 (Sat) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">2</span>
+</div>
+<!-- Nov 3 (Sun) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">3</span>
+</div>
+<!-- Nov 4 (Mon) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4</span>
+</div>
+<!-- Nov 5 (Tue): Rent Due (Primary Highlight) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-secondary-container/40 shadow-sm flex flex-col justify-between cursor-pointer hover:bg-secondary-container transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-secondary-fixed">5</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="mt-1 bg-primary-container text-on-primary rounded p-1 text-left">
+<span class="font-label-caps text-label-caps font-semibold block leading-tight">Rent Due</span>
+<span class="font-label-caps text-label-caps font-bold">₹35,000</span>
+</div>
+</div>
+<!-- Nov 6 (Wed) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">6</span>
+</div>
+<!-- Nov 7 (Thu) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">7</span>
+</div>
+<!-- Nov 8 (Fri) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">8</span>
+</div>
+<!-- Nov 9 (Sat) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">9</span>
+</div>
+<!-- Nov 10 (Sun): Penalty Clause Trigger (Amber Alert) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-tertiary-fixed/30 hover:bg-tertiary-fixed/50 transition-all flex flex-col justify-between cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-tertiary-fixed-variant">10</span>
+<span class="material-symbols-outlined text-xs text-on-tertiary-container">warning</span>
+</div>
+<div class="mt-1 bg-surface-container-lowest text-on-tertiary-container rounded p-1 shadow-sm text-left">
+<span class="font-label-caps text-label-caps font-semibold block leading-tight">Clause 9.2</span>
+<span class="text-[9px] font-label-caps text-on-surface-variant">Late Fee Active</span>
+</div>
+</div>
+<!-- Nov 11 - Nov 19 -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">11</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">12</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">13</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">14</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">15</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">16</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">17</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">18</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">19</span></div>
+<!-- Nov 20 (Wed): RWA Maintenance Due (Slate tag) -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col justify-between cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">20</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-1 bg-surface-container-lowest text-on-secondary-container rounded p-1 shadow-sm text-left">
+<span class="font-label-caps text-label-caps font-semibold block leading-tight">RWA Maint.</span>
+<span class="font-label-caps text-label-caps font-bold">₹3,200</span>
+</div>
+</div>
+<!-- Nov 21 - 30 -->
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">21</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">22</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">23</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">24</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">25</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">26</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">27</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">28</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">29</span></div>
+<div class="min-h-[78px] p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between cursor-pointer"><span class="font-label-sm text-label-sm font-semibold text-on-surface">30</span></div>
+</div>
+<!-- Selected Day Details Preview Pane Underneath Calendar -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex flex-col items-center justify-center shadow-sm shrink-0">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container font-bold leading-none">Tue</span>
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface leading-none mt-0.5">05</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-on-surface">Primary Tenancy Rent Due (November Cycle)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">Active Cycle</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Scheduled for direct bank settlement: Axis Bank ESCROW 99120 • Ref #TXN-77312</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm font-semibold shadow-sm" type="button">
+              View Deed Clause
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-on-background transition-colors font-body-sm text-body-sm font-semibold shadow-sm" type="button">
+              Schedule Reminders
+            </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Upcoming Reminders & Critical Triggers (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Upcoming Reminders &amp; Critical Triggers</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Chronological statutory queue</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps font-bold">4 Active</span>
+</div>
+<!-- Reminders List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Reminder 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">account_balance_wallet</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Monthly Rent Payment (Nov Cycle)</h4>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due Nov 05, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₹35,000</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-bold uppercase">
+                Pending
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 days grace buffer per Deed §4</span>
+<button class="px-3 py-1 bg-primary-container text-on-primary hover:bg-on-background rounded-lg font-label-caps text-label-caps font-semibold transition-colors shadow-sm" type="button">
+                Mark as Paid
+              </button>
+</div>
+</div>
+<!-- Reminder 2: Statutory Pre-Emptive Window -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">warning</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Notice of Non-Renewal Pre-Emptive Window</h4>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Starts Nov 10, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sec. 106 T.P. Act</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-bold uppercase">
+                Action Rec.
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-1">
+              Statutory reminder to serve formal intimation to avert automated 10% penalty escalation clause under Clause 9.2.
+            </p>
+<div class="flex items-center justify-end pt-space-xs">
+<button class="text-on-tertiary-container hover:text-on-surface font-label-caps text-label-caps font-bold flex items-center gap-1" type="button">
+                Draft Statutory Notice
+                <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Reminder 3: Society Maintenance -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">apartment</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Society Maintenance &amp; Water Dues</h4>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due Nov 20, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₹3,200</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps font-bold uppercase">
+                Upcoming
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Payable to: MyHome Bhooja RWA</span>
+<button class="px-3 py-1 bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-lg font-label-caps text-label-caps font-semibold transition-colors shadow-sm" type="button">
+                Upload RWA Receipt
+              </button>
+</div>
+</div>
+<!-- Reminder 4: Structural Inspection -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">engineering</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold text-on-surface">Quarterly AC &amp; Structural Inspection</h4>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Due Dec 15, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clause 12 Audit</span>
+</div>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-label-caps font-bold uppercase">
+                Upcoming
+              </span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tenant &amp; Landlord joint sign-off protocol required to preserve full deposit refund rights.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment History & Transaction Telemetry Table (Bottom Section) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Payment History &amp; Evidentiary Telemetry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified transaction receipts admissible under Section 65B of the Indian Evidence Act.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="h-9 pl-9 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all w-48 lg:w-60" placeholder="Filter UTR / Cycle..." type="text"/>
+</div>
+<button class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-label-caps text-label-caps font-semibold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Columns</span>
+</button>
+</div>
+</div>
+<!-- Table Viewport -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low/70 font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">
+<tr>
+<th class="py-space-md px-space-lg">Cycle &amp; Description</th>
+<th class="py-space-md px-space-md">Due / Paid Date</th>
+<th class="py-space-md px-space-md">Amount (₹)</th>
+<th class="py-space-md px-space-md">Payment Mode</th>
+<th class="py-space-md px-space-md">UTR / Receipt Hash</th>
+<th class="py-space-md px-space-md">Evidentiary Status</th>
+<th class="py-space-md px-space-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">home</span>
+</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">October 2024 Tenancy Rent</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Inv #INV-2024-10</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold">04 Oct 2024</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Due: 05 Oct 2024 (On Time)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-bold text-on-surface">₹35,000</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">sync_alt</span>
+                  NEFT (Axis Corp)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface-variant font-mono">
+<span>AXIS9882310029X</span>
+<button class="text-on-secondary-container hover:text-on-surface" title="Copy UTR" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Sec 65B Certified
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Download Receipt" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="View Legal Voucher" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Advance Security Deposit</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Deed Escrow Deposit §2</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold">20 Oct 2024</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Due: Agreement Execution</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-bold text-on-surface">₹1,50,000</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">account_balance</span>
+                  RTGS Bank Transfer
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface-variant font-mono">
+<span>HDFC0091882312A</span>
+<button class="text-on-secondary-container hover:text-on-surface" title="Copy UTR" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Sec 65B Certified
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Download Receipt" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="View Legal Voucher" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-container text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-sm">home</span>
+</div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">September 2024 Tenancy Rent</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Inv #INV-2024-09</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-semibold">05 Sep 2024</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Due: 05 Sep 2024</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-bold text-on-surface">₹35,000</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 font-medium text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary">qr_code_2</span>
+                  UPI / Instant P2M
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 font-label-caps text-label-caps text-on-surface-variant font-mono">
+<span>UPI/424910294121</span>
+<button class="text-on-secondary-container hover:text-on-surface" title="Copy UTR" type="button">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Sec 65B Certified
+                </span>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Download Receipt" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="View Legal Voucher" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footnote & Statutory Citation -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-on-tertiary-container">verified</span>
+<span class="font-label-sm text-label-sm">
+            Statutory Notice: Notice periods and grace cycles are determined by specific deed clauses and applicable state rent legislations (TS / AP Tenancy Acts).
+          </span>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-label-caps text-label-caps font-bold">
+<span>Showing 3 of 11 Records</span>
+<a class="text-on-secondary-container hover:text-on-surface underline" href="#">View Complete Ledger</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Flyout / Modal: "+ Add Custom Reminder" -->
+<div aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-end bg-primary-container/40 backdrop-blur-sm hidden" id="reminder-modal" role="dialog">
+<div class="w-full max-w-lg h-full bg-surface-container-lowest shadow-2xl flex flex-col justify-between overflow-y-auto transform transition-all duration-300">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-between sticky top-0 z-10 shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">notification_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Add Tenancy Reminder</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Statutory deadline &amp; payment schedule tracker</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Form Fields Body -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Field 1: Title -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase font-semibold">Reminder Title *</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all" placeholder="e.g., GHMC Property Tax TDS / Advance Rent" type="text"/>
+</div>
+<!-- Field 2: Category Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase font-semibold">Jurisdictional Category *</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="p-2.5 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold text-left flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base text-secondary">payments</span>
+<span>Rent Payment</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container transition-colors text-left flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">construction</span>
+<span>Maintenance Due</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container transition-colors text-left flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">mail</span>
+<span>Notice Window</span>
+</button>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm hover:bg-surface-container transition-colors text-left flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">history_edu</span>
+<span>Agreement Renewal</span>
+</button>
+</div>
+</div>
+<!-- Row: Due Date & Amount -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase font-semibold">Due Date *</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container transition-all" type="date" value="2024-11-05"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase font-semibold">Amount (₹)</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all" placeholder="35000" type="number"/>
+</div>
+</div>
+<!-- Field: Recurrence -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase font-semibold">Recurrence Rule</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container transition-all">
+<option>Monthly (Recurring Rent Cycle)</option>
+<option>Quarterly (Society Maintenance)</option>
+<option>Annual (Agreement Renewal &amp; Stamp Duty)</option>
+<option>One-Time Statutory Notice</option>
+</select>
+</div>
+<!-- Channel Alerts Toggle -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm mt-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface font-bold uppercase tracking-wider">Multi-Channel Evidentiary Alerts</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-on-tertiary-container">chat</span>
+<span class="font-body-sm text-body-sm text-on-surface">WhatsApp Push Dispatch</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-0" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">mail</span>
+<span class="font-body-sm text-body-sm text-on-surface">Registered Email Dispatch</span>
+</div>
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-0" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-on-surface">gavel</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pre-litigation Warning SMS</span>
+</div>
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary-container focus:ring-0" type="checkbox"/>
+</div>
+</div>
+<!-- Inset Advisory Note -->
+<div class="p-space-sm rounded-lg bg-secondary-container/40 text-on-secondary-fixed flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5">info</span>
+<p class="font-label-sm text-label-sm leading-snug">
+            Reminders logged here automatically integrate into your evidentiary audit timeline and will be timestamped with hash records.
+          </p>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-lowest flex items-center justify-end gap-space-sm sticky bottom-0 shadow-md">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm font-semibold" id="btn-cancel-modal" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:bg-on-background transition-colors font-body-sm text-body-sm font-semibold shadow-sm" id="btn-save-reminder" type="button">
+          Save &amp; Arm Reminder
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Vanilla JavaScript Micro-Interactions -->
+<script>
+    (function initRentTracker() {
+      const modal = document.getElementById('reminder-modal');
+      const openBtn = document.getElementById('btn-open-reminder-modal');
+      const closeBtn = document.getElementById('btn-close-modal');
+      const cancelBtn = document.getElementById('btn-cancel-modal');
+      const saveBtn = document.getElementById('btn-save-reminder');
+      const exportBtn = document.getElementById('btn-export-stmt');
+
+      function openModal() {
+        if (modal) modal.classList.remove('hidden');
+      }
+
+      function closeModal() {
+        if (modal) modal.classList.add('hidden');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          saveBtn.innerText = 'Arming Schedule...';
+          setTimeout(() => {
+            saveBtn.innerText = 'Save & Arm Reminder';
+            closeModal();
+          }, 400);
+        });
+      }
+
+      if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+          const original = exportBtn.innerHTML;
+          exportBtn.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">sync</span><span>Generating PDF...</span>';
+          setTimeout(() => {
+            exportBtn.innerHTML = original;
+          }, 700);
+        });
+      }
+
+      // Close modal on backdrop click
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

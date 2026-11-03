@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In &mdash; LexAdvisor AI</title>
+  <meta name="description" content="Sign in or Sign up to LexAdvisor AI using your Google Account for Indian legal decision support and document simplification.">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d1527 0%, #14213d 50%, #1e293b 100%);
+      font-family: "Public Sans", system-ui, sans-serif;
+      margin: 0;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .auth-container {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 34px 28px;
+      animation: authFadeIn 0.3s ease-out;
+    }
+
+    @keyframes authFadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .auth-brand {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .auth-brand-icon {
+      font-size: 2.2rem;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .auth-brand h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.7rem;
+      color: #14213d;
+      margin: 0 0 4px;
+      font-weight: 700;
+    }
+
+    .auth-brand p {
+      font-size: 0.88rem;
+      color: #64748b;
+      margin: 0;
+    }
+
+    /* Auth Mode Tabs */
+    .auth-tabs {
+      display: flex;
+      border-bottom: 2px solid #e2e8f0;
+      margin-bottom: 20px;
+    }
+
+    .auth-tab-btn {
+      flex: 1;
+      padding: 10px 0;
+      background: transparent;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #64748b;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      transition: color 0.18s;
+    }
+
+    .auth-tab-btn.active {
+      color: #14213d;
+    }
+
+    .auth-tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #14213d;
+    }
+
+    /* Google Button */
+    .btn-google-primary {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #ffffff;
+      color: #1f2937;
+      border: 1.5px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 0.96rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      transition: all 0.2s ease;
+      margin: 0 0 18px;
+    }
+
+    .btn-google-primary:hover {
+      background: #f9fafb;
+      border-color: #9ca3af;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      transform: translateY(-1px);
+    }
+
+    .google-account-quick-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .google-account-quick-card:hover {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+
+    .google-avatar-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #1a73e8;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .google-acc-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .google-acc-info strong {
+      font-size: 0.95rem;
+      color: #0f172a;
+    }
+
+    .google-acc-info span {
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+
+    .auth-divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 18px 0;
+      color: #94a3b8;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .auth-divider::before, .auth-divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .auth-divider span {
+      padding: 0 10px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: #0f172a;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 0.92rem;
+      transition: border-color 0.18s;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #14213d;
+    }
+
+    .btn-auth-submit {
+      width: 100%;
+      background: #14213d;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: opacity 0.2s;
+    }
+
+    .btn-auth-submit:hover {
+      opacity: 0.92;
+    }
+
+    .auth-footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #64748b;
+      line-height: 1.4;
+    }
+
+    /* Already logged in banner */
+    .already-logged-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-container">
+    <div class="auth-brand">
+      <span class="auth-brand-icon">⚖️</span>
+      <h1>LexAdvisor AI</h1>
+      <p>Indian Legal Decision-Support &bull; Telangana &amp; AP</p>
+    </div>
+
+    <!-- Active session banner if already logged in -->
+    <div id="already-logged-section" style="display:none;" class="already-logged-card">
+      <p style="margin:0 0 8px;font-size:0.9rem;color:#166534;">
+        Logged in as <strong id="current-user-display">Suresh Thakur</strong>
+      </p>
+      <div style="display:flex;gap:8px;justify-content:center;">
+        <button type="button" class="btn-auth-submit" style="margin:0;padding:8px 14px;font-size:0.85rem;" onclick="window.location.href='/'">
+          Go to Application &rarr;
+        </button>
+        <button type="button" style="margin:0;padding:8px 14px;font-size:0.85rem;background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;" onclick="handleSignOut()">
+          Sign Out
+        </button>
+      </div>
+    </div>
+
+    <div id="auth-forms-container">
+      <!-- Tabs: Sign In / Sign Up -->
+      <div class="auth-tabs">
+        <button type="button" id="tab-btn-signin" class="auth-tab-btn active" onclick="switchAuthTab('signin')">Sign In</button>
+        <button type="button" id="tab-btn-signup" class="auth-tab-btn" onclick="switchAuthTab('signup')">Sign Up</button>
+      </div>
+
+      <!-- Quick 1-Click Google Sign-in Card -->
+      <div class="google-account-quick-card" onclick="submitGoogleAuth('sureshtakur194@gmail.com', 'Suresh Thakur')">
+        <div class="google-avatar-circle">S</div>
+        <div class="google-acc-info">
+          <strong>Suresh Thakur</strong>
+          <span>sureshtakur194@gmail.com</span>
+        </div>
+        <span class="badge badge-pass" style="font-size:0.75rem;">1-Click &rarr;</span>
+      </div>
+
+      <!-- Official Continue with Google Button -->
+      <button type="button" class="btn-google-primary" onclick="submitGoogleAuth()">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+        </svg>
+        <span id="google-btn-text">Continue with Google</span>
+      </button>
+
+      <div class="auth-divider"><span>or with Google account details</span></div>
+
+      <!-- Form Inputs -->
+      <div id="signup-name-group" class="form-group" style="display:none;">
+        <label for="auth-name">Full Name</label>
+        <input type="text" id="auth-name" placeholder="Suresh Thakur" value="Suresh Thakur">
+      </div>
+
+      <div class="form-group">
+        <label for="auth-email">Google Email Address</label>
+        <input type="email" id="auth-email" placeholder="sureshtakur194@gmail.com" value="sureshtakur194@gmail.com">
+      </div>
+
+      <button type="button" class="btn-auth-submit" id="btn-submit-action" onclick="handleFormAuth()">
+        Sign In with Google Account
+      </button>
+
+      <div id="auth-status-message" style="margin-top:12px;font-size:0.86rem;text-align:center;"></div>
+    </div>
+
+    <div class="auth-footer">
+      Grounded in Telangana &amp; Andhra Pradesh Stamp Schedules and Indian Contract Law. Designed to protect everyday citizens.
+    </div>
+  </div>
+
+  <script>
+    let currentMode = "signin";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedUser = localStorage.getItem("lex_user");
+      const savedToken = localStorage.getItem("lex_token");
+
+      if (savedUser && savedToken) {
+        try {
+          const u = JSON.parse(savedUser);
+          document.getElementById("current-user-display").textContent = `${u.name} (${u.email})`;
+          document.getElementById("already-logged-section").style.display = "block";
+        } catch(e) {}
+      }
+
+      // Check URL parameters (e.g. ?mode=signup)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("mode") === "signup" || window.location.pathname.includes("signup")) {
+        switchAuthTab("signup");
+      }
+    });
+
+    function switchAuthTab(mode) {
+      currentMode = mode;
+      const signInBtn = document.getElementById("tab-btn-signin");
+      const signUpBtn = document.getElementById("tab-btn-signup");
+      const nameGroup = document.getElementById("signup-name-group");
+      const googleBtnText = document.getElementById("google-btn-text");
+      const submitBtn = document.getElementById("btn-submit-action");
+
+      if (mode === "signup") {
+        signInBtn.classList.remove("active");
+        signUpBtn.classList.add("active");
+        nameGroup.style.display = "block";
+        googleBtnText.textContent = "Sign Up with Google";
+        submitBtn.textContent = "Create Account with Google";
+      } else {
+        signUpBtn.classList.remove("active");
+        signInBtn.classList.add("active");
+        nameGroup.style.display = "none";
+        googleBtnText.textContent = "Continue with Google";
+        submitBtn.textContent = "Sign In with Google Account";
+      }
+    }
+
+    async function submitGoogleAuth(email, name) {
+      const mail = email || document.getElementById("auth-email").value.trim() || "sureshtakur194@gmail.com";
+      const fullName = name || document.getElementById("auth-name").value.trim() || "Suresh Thakur";
+      const statusEl = document.getElementById("auth-status-message");
+
+      statusEl.textContent = "Authenticating with Google Account...";
+      statusEl.style.color = "#14213d";
+
+      try {
+        const res = await fetch("/api/v1/auth/google", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: mail,
+            name: fullName,
+            token: "google_oauth_token_client"
+          })
+        });
+
+        if (!res.ok) throw new Error("Google authentication failed");
+        const data = await res.json();
+
+        const userInfo = {
+          name: data.name || fullName,
+          email: data.email || mail,
+          user_id: data.user_id,
+          token: data.access_token
+        };
+
+        localStorage.setItem("lex_user", JSON.stringify(userInfo));
+        localStorage.setItem("lex_token", data.access_token);
+
+        statusEl.textContent = `✓ Signed in as ${userInfo.name}! Redirecting...`;
+        statusEl.style.color = "#15803d";
+
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 400);
+
+      } catch (err) {
+        statusEl.textContent = `Sign in error: ${err.message}`;
+        statusEl.style.color = "#b3261e";
+      }
+    }
+
+    function handleFormAuth() {
+      const email = document.getElementById("auth-email").value.trim();
+      const name = document.getElementById("auth-name").value.trim();
+      submitGoogleAuth(email, name);
+    }
+
+    function handleSignOut() {
+      localStorage.removeItem("lex_user");
+      localStorage.removeItem("lex_token");
+      document.getElementById("already-logged-section").style.display = "none";
+    }
+  </script>
+</body>
+</html>

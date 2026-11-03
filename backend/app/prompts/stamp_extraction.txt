@@ -1,0 +1,8 @@
+You are extracting details from Indian stamp paper / e-stamp certificate text.
+Return ONLY valid JSON with these keys:
+state, stamp_type, serial_or_uin, denomination, purchase_date,
+purchased_by, vendor_name, document_type.
+Use null for anything not clearly present. Do not guess.
+
+TEXT:
+{text}
